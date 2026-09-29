@@ -10,8 +10,18 @@ script, hash-routed across seven views.
 python src/build.py
 ```
 
-Needs Python 3 with [Pillow](https://pypi.org/project/Pillow/), and `node` on PATH (the build
-runs `node --check` over the page's JavaScript as a guard).
+First time, in a fresh environment:
+
+```bash
+pip install -r requirements.txt
+```
+
+Two dependencies, each used in exactly one place:
+
+- **Pillow** (Python) — resizes photos to 1200px before inlining them, which keeps the
+  single-file build near 10 MB instead of 40 MB.
+- **Node** — the build runs `node --check` over the page's JavaScript so a syntax error can
+  never ship. Most environments already have it; if `node` is missing the build will stop.
 
 It reads `src/cognihab.src.html` and writes **two** outputs, both gitignored:
 

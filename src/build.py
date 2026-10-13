@@ -124,10 +124,7 @@ for w in ['lorem', 'tbd', 'placeholder', 'dummy', 'yoga', 'chapati', 'namaste@']
 # ---------------------------------------------------------------- split shell / views
 MAIN_RE = re.compile(r'<main class="view( on)?" id="v-[\w-]+" data-view="([\w/-]+)">.*?</main>\n?', re.S)
 mains = {m.group(2): m.group(0) for m in MAIN_RE.finditer(S)}
-assert set(mains) <= set(PAGES), 'views without a PAGES entry: %s' % (set(mains) - set(PAGES))
-SKIPPED = set(PAGES) - set(mains)
-for v in SKIPPED:  # TODO(phase 7): make this strict once every page exists
-    print('no view yet for', v); del PAGES[v]
+assert set(mains) == set(PAGES), 'views without a PAGES entry or vice versa: %s' % (set(mains) ^ set(PAGES))
 first, last = MAIN_RE.search(S).start(), list(MAIN_RE.finditer(S))[-1].end()
 PRE, POST = S[:first], S[last:]
 for v, m in mains.items():
@@ -138,6 +135,8 @@ def to_hash(m):
     path, frag = m.group(1), m.group(2) or ''
     if path.startswith(EXTERNAL_PATHS):
         return 'href="%s%s%s"' % (SITE, path, frag)
+    if re.search(r'\.\w+$', path):  # a file next to the single page: images/..., docs/...
+        return 'href="%s%s"' % (path.lstrip('/'), frag)
     path = path.split('?')[0].strip('/')
     h = '/'.join(p for p in [path or ('home' if not frag else ''), frag.lstrip('#')] if p)
     return 'href="#%s"' % (h or 'home')
@@ -267,11 +266,7 @@ for view, (title, desc, _) in PAGES.items():
 urls = set(built)
 bad = sorted((v, h) for v, h in links if h not in urls and not h.startswith(EXTERNAL_PATHS)
              and not (dep / h.lstrip('/')).is_file())
-missing = sorted({h for v, h in bad})
-if SKIPPED:  # TODO(phase 7): strict again once every page exists
-    print('links to pages not built yet:', ', '.join(missing))
-else:
-    assert not bad, 'broken internal links: %s' % bad
+assert not bad, 'broken internal links: %s' % bad
 
 (dep / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s</urlset>\n' % ''.join(
     '  <url><loc>%s%s</loc></url>\n' % (SITE, u) for u in built), encoding='utf-8')

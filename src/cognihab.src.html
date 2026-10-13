@@ -751,6 +751,25 @@ h1.as-h2{font-size:clamp(2.1rem,4.6vw,3.9rem);color:var(--navy)}
 .pillar-cta .talk a,.pillar-cta .also a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:980px){.whyg{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.wgrid{grid-template-columns:1fr}.whyg{grid-template-columns:1fr}.pillar-cta .wrap{grid-template-columns:1fr}}
+.uh{font-size:1.15rem;color:var(--navy);letter-spacing:-.02em;margin-top:1.6rem}
+.ucd .uh+p{margin-top:.5rem}
+.pg .sub{font-family:var(--disp);font-size:clamp(1.2rem,2vw,1.55rem);color:#fff;margin:-.4rem 0 1rem;letter-spacing:-.02em}
+.sibs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1.6rem}
+.sib{display:grid;gap:.4rem;background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.3rem 1.4rem;transition:border-color .3s,transform .4s var(--ease)}
+.sib:hover{border-color:var(--leaf);transform:translateY(-2px)}
+.sib b{font-family:var(--disp);font-size:1.15rem;color:var(--navy);letter-spacing:-.02em}
+.sib span{font-size:.94rem}
+.prose2 p{font-size:1.06rem;line-height:1.7;margin-bottom:1rem;max-width:62ch}
+.acards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.8rem}
+.acard{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.acard .im{aspect-ratio:3/2;overflow:hidden}
+.acard .im img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.acard .bd{padding:1.3rem 1.4rem 1.5rem;display:grid;gap:.6rem;align-content:start}
+.acard h3{font-size:1.3rem;color:var(--navy);letter-spacing:-.02em}
+.faces{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1.2rem;margin-top:1.8rem}
+.face{display:grid;gap:.5rem;justify-items:center;text-align:center;font-size:.84rem;color:var(--ink)}
+.face img{width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:50% 25%;border:1px solid var(--line)}
+@media(max-width:860px){.acards{grid-template-columns:1fr}}
 h2{text-wrap:balance}
 
 /* equipment block */
@@ -2034,7 +2053,7 @@ h2{text-wrap:balance}
           </dl>
         </div>
         <figure class="patfig rv">
-          <a href="images/patent-certificate-cognihab.jpg" target="_blank" rel="noopener" aria-label="View the full patent certificate">
+          <a href="/images/patent-certificate-cognihab.jpg" target="_blank" rel="noopener" aria-label="View the full patent certificate">
             <img src="{{IMG:patent-certificate-cognihab.jpg}}" alt="Patent certificate 575729 issued by the Patent Office, Government of India, to CogniHab Healthcare Solutions Private Limited">
           </a>
           <figcaption>The granted certificate. Click to view full size.</figcaption>
@@ -2172,6 +2191,7 @@ h2{text-wrap:balance}
 <main class="view" id="v-advisors" data-view="advisors">
   <section class="sec">
     <div class="wrap">
+      <!--CRUMBS-->
       <div class="head2 rt">
         <div><div class="eb">Our advisors</div><h1 class="as-h2">Built and validated with the clinicians who use it.</h1></div>
         <p>Every programme is shaped and checked by practising specialists across ophthalmology, orthopaedics, rehabilitation, paediatrics, oncology and healthcare management. They tell us what a session has to do before it is worth a patient&#8217;s time.</p>
@@ -2202,6 +2222,7 @@ h2{text-wrap:balance}
 <main class="view" id="v-research" data-view="research">
   <section class="sec">
     <div class="wrap">
+      <!--CRUMBS-->
       <div class="head2 rt">
         <div><div class="eb">Published research</div><h1 class="as-h2">The lazy eye programme, in a peer-reviewed journal.</h1></div>
         <p>A commentary in the <em>Indian Journal of Community Health</em> on why amblyopia goes undetected in India, why the conventional treatments are so often abandoned, and what changed when the therapy became something a child would actually finish.</p>
@@ -2308,6 +2329,495 @@ h2{text-wrap:balance}
     </div>
   </section>
 </main>
+
+<!-- ================= USE CASE: Stroke &amp; Neurological Rehabilitation ================= -->
+<main class="view" id="v-uc-stroke-neurological-rehabilitation" data-view="rehabilitation/stroke-neurological-rehabilitation">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:rehab-uc-stroke.jpg}}" alt="An older man in a VR headset raises his bare hands at a table while an occupational therapist watches"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Rehabilitation &#183; Use case</div>
+        <h1>Stroke &amp; Neurological Rehabilitation</h1>
+        <p class="lead"><b>Relearning grip, reach and everyday actions.</b> Interactive rehabilitation tasks help patients practise reaching, grip, coordination and activities of daily living. Each task is scored to help therapists track performance.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/">Explore VR rehabilitation</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Patients work through interactive tasks using controllers or bare hands. Tasks include holding a spoon, drinking water, brushing teeth, opening a drawer and other everyday actions. Each task is scored automatically.</p>
+        <h3 class="uh">Who buys it</h3><p>Hospitals, neurological rehabilitation units and occupational therapy departments.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset with controllers or bare-hand tracking. No phone is required for this use case.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Stroke rehabilitation</li><li>Head injury recovery</li><li>Cerebral palsy rehabilitation</li><li>Upper limb rehabilitation</li><li>Grip and reach training</li><li>Activities of daily living</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR rehabilitation use cases</h2></div><p><a class="lnk" href="/rehabilitation/">See the full VR rehabilitation programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/rehabilitation/orthopaedic-post-surgical-recovery/"><b>Orthopaedic &amp; Post-Surgical Rehabilitation</b><span>Guided exercises with measurable movement and form tracking.</span></a><a class="sib" href="/rehabilitation/spinal-injury-rehabilitation/"><b>Spinal Cord Injury Rehabilitation</b><span>Structured rehabilitation for different levels of mobility.</span></a><a class="sib" href="/rehabilitation/senior-care-fall-prevention/"><b>Senior Care &amp; Fall Prevention</b><span>Guided rehabilitation for balance, strength and mobility.</span></a><a class="sib" href="/rehabilitation/sports-rehabilitation-fitness/"><b>Sports Rehabilitation &amp; Fitness</b><span>Measured movement, guided exercises and structured recovery.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Orthopaedic &amp; Post-Surgical Rehabilitation ================= -->
+<main class="view" id="v-uc-orthopaedic-post-surgical-recovery" data-view="rehabilitation/orthopaedic-post-surgical-recovery">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:rehab-uc-ortho.jpg}}" alt="A young woman with a knee brace does a mini-squat holding a chair, facing a phone on a tripod"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Rehabilitation &#183; Use case</div>
+        <h1>Orthopaedic &amp; Post-Surgical Rehabilitation</h1>
+        <p class="lead"><b>Guided exercises with measurable movement and form tracking.</b> CogniHab combines guided exercises, movement assessment and camera-based form checking to support structured recovery after orthopaedic injury or surgery.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/">Explore VR rehabilitation</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>A baseline assessment can be used to build a rehabilitation programme. The phone camera checks exercise form during repetitions, while repeat assessments help show changes in movement over time.</p>
+        <h3 class="uh">Who buys it</h3><p>Orthopaedic hospitals, physiotherapy centres and surgeons&#8217; clinics.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset with a phone, or phone alone for scans and exercises.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Post-surgical rehabilitation</li><li>Joint stiffness</li><li>Reduced range of motion</li><li>Strength and mobility</li><li>Guided physiotherapy exercises</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR rehabilitation use cases</h2></div><p><a class="lnk" href="/rehabilitation/">See the full VR rehabilitation programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/rehabilitation/stroke-neurological-rehabilitation/"><b>Stroke &amp; Neurological Rehabilitation</b><span>Relearning grip, reach and everyday actions.</span></a><a class="sib" href="/rehabilitation/spinal-injury-rehabilitation/"><b>Spinal Cord Injury Rehabilitation</b><span>Structured rehabilitation for different levels of mobility.</span></a><a class="sib" href="/rehabilitation/senior-care-fall-prevention/"><b>Senior Care &amp; Fall Prevention</b><span>Guided rehabilitation for balance, strength and mobility.</span></a><a class="sib" href="/rehabilitation/sports-rehabilitation-fitness/"><b>Sports Rehabilitation &amp; Fitness</b><span>Measured movement, guided exercises and structured recovery.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Spinal Cord Injury Rehabilitation ================= -->
+<main class="view" id="v-uc-spinal-injury-rehabilitation" data-view="rehabilitation/spinal-injury-rehabilitation">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:rehab-uc-spinal.jpg}}" alt="A man in a wheelchair wearing a VR headset raises both arms while a therapist stands behind him"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Rehabilitation &#183; Use case</div>
+        <h1>Spinal Cord Injury Rehabilitation</h1>
+        <p class="lead"><b>Structured rehabilitation for different levels of mobility.</b> Guided exercises support assisted, passive, seated, core and spine movements for patients with limited mobility.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/">Explore VR rehabilitation</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Patients work through exercises selected for their movement ability. Programmes can include assisted and passive exercises, seated activities, core and spine work, and separate left- and right-side movements. Activity is recorded and scored during the session.</p>
+        <h3 class="uh">Who buys it</h3><p>Spinal injury units and long-term rehabilitation centres.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset with a phone. Many exercises can be performed in a seated position.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Spinal cord injury rehabilitation</li><li>Limited mobility</li><li>Assisted exercises</li><li>Passive exercises</li><li>Core and spine movement</li><li>Asymmetric movement</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR rehabilitation use cases</h2></div><p><a class="lnk" href="/rehabilitation/">See the full VR rehabilitation programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/rehabilitation/stroke-neurological-rehabilitation/"><b>Stroke &amp; Neurological Rehabilitation</b><span>Relearning grip, reach and everyday actions.</span></a><a class="sib" href="/rehabilitation/orthopaedic-post-surgical-recovery/"><b>Orthopaedic &amp; Post-Surgical Rehabilitation</b><span>Guided exercises with measurable movement and form tracking.</span></a><a class="sib" href="/rehabilitation/senior-care-fall-prevention/"><b>Senior Care &amp; Fall Prevention</b><span>Guided rehabilitation for balance, strength and mobility.</span></a><a class="sib" href="/rehabilitation/sports-rehabilitation-fitness/"><b>Sports Rehabilitation &amp; Fitness</b><span>Measured movement, guided exercises and structured recovery.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Senior Care &amp; Fall Prevention ================= -->
+<main class="view" id="v-uc-senior-care-fall-prevention" data-view="rehabilitation/senior-care-fall-prevention">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:rehab-uc-senior.jpg}}" alt="An elderly woman holds the back of a chair for a heel raise in a care home lounge while a care assistant watches"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Rehabilitation &#183; Use case</div>
+        <h1>Senior Care &amp; Fall Prevention</h1>
+        <p class="lead"><b>Guided rehabilitation for balance, strength and mobility.</b> Guided exercises, posture analysis and movement tracking support mobility and balance programmes for older adults.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/">Explore VR rehabilitation</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Patients can complete guided exercises using a phone camera alone or a headset and phone. Posture scans help track changes in physical function over time.</p>
+        <h3 class="uh">Who buys it</h3><p>Senior care homes, geriatric clinics and home care providers.</p>
+        <h3 class="uh">What is needed</h3><p>Phone alone or Meta Quest headset with a phone.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Age-related weakness</li><li>Balance and mobility</li><li>Fall prevention</li><li>Strength and conditioning</li><li>Body awareness</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR rehabilitation use cases</h2></div><p><a class="lnk" href="/rehabilitation/">See the full VR rehabilitation programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/rehabilitation/stroke-neurological-rehabilitation/"><b>Stroke &amp; Neurological Rehabilitation</b><span>Relearning grip, reach and everyday actions.</span></a><a class="sib" href="/rehabilitation/orthopaedic-post-surgical-recovery/"><b>Orthopaedic &amp; Post-Surgical Rehabilitation</b><span>Guided exercises with measurable movement and form tracking.</span></a><a class="sib" href="/rehabilitation/spinal-injury-rehabilitation/"><b>Spinal Cord Injury Rehabilitation</b><span>Structured rehabilitation for different levels of mobility.</span></a><a class="sib" href="/rehabilitation/sports-rehabilitation-fitness/"><b>Sports Rehabilitation &amp; Fitness</b><span>Measured movement, guided exercises and structured recovery.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Sports Rehabilitation &amp; Fitness ================= -->
+<main class="view" id="v-uc-sports-rehabilitation-fitness" data-view="rehabilitation/sports-rehabilitation-fitness">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:rehab-uc-sports.jpg}}" alt="A young athlete balances on one leg facing a phone on a tripod while a physiotherapist takes notes"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Rehabilitation &#183; Use case</div>
+        <h1>Sports Rehabilitation &amp; Fitness</h1>
+        <p class="lead"><b>Measured movement, guided exercises and structured recovery.</b> Range of motion assessment, guided exercises and camera-based form checking support sports rehabilitation and fitness programmes.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/">Explore VR rehabilitation</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Joint movements can be measured at intervals, while guided exercises support strength, mobility and movement training. The camera can check exercise form during repetitions.</p>
+        <h3 class="uh">Who buys it</h3><p>Sports clinics, academies, physiotherapists, fitness centres and individuals at home.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset with a phone, or phone alone for scans and exercises.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Sports injury rehabilitation</li><li>Range of motion assessment</li><li>Strength and mobility</li><li>Movement assessment</li><li>Return-to-activity programmes</li><li>Day-to-day fitness</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR rehabilitation use cases</h2></div><p><a class="lnk" href="/rehabilitation/">See the full VR rehabilitation programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/rehabilitation/stroke-neurological-rehabilitation/"><b>Stroke &amp; Neurological Rehabilitation</b><span>Relearning grip, reach and everyday actions.</span></a><a class="sib" href="/rehabilitation/orthopaedic-post-surgical-recovery/"><b>Orthopaedic &amp; Post-Surgical Rehabilitation</b><span>Guided exercises with measurable movement and form tracking.</span></a><a class="sib" href="/rehabilitation/spinal-injury-rehabilitation/"><b>Spinal Cord Injury Rehabilitation</b><span>Structured rehabilitation for different levels of mobility.</span></a><a class="sib" href="/rehabilitation/senior-care-fall-prevention/"><b>Senior Care &amp; Fall Prevention</b><span>Guided rehabilitation for balance, strength and mobility.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Lazy Eye Therapy in the Clinic ================= -->
+<main class="view" id="v-uc-lazy-eye-therapy" data-view="vision/lazy-eye-therapy">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:vision-uc-clinic.jpg}}" alt="A girl in a VR headset holds two controllers while an optometrist in a white coat sits across from her"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Vision care &#183; Use case</div>
+        <h1>Lazy Eye Therapy in the Clinic</h1>
+        <p class="lead"><b>VR vision therapy for structured lazy eye treatment.</b> Children complete short interactive sessions across 11 therapy games, while the clinic prescribes the programme and tracks session completion.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=vision">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/">Explore VR vision therapy</a></div>
+        <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>The clinic prescribes the programme and the child completes around 15-minute sessions across 11 therapy games and 3 training modes. The clinic can track whether sessions are being completed between visits.</p>
+        <h3 class="uh">Who buys it</h3><p>Eye clinics, paediatric ophthalmology departments and optometry practices.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset with controllers in the clinic. At home, lightweight VR goggles with a mobile phone and handheld remote.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Lazy eye / amblyopia</li><li>Vision therapy</li><li>Eye coordination</li><li>Structured therapy sessions</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR vision therapy use cases</h2></div><p><a class="lnk" href="/vision/">See the full VR vision therapy programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/vision/vision-screening/"><b>Vision Screening in Clinics &amp; Workplaces</b><span>A guided VR eye test in under ten minutes.</span></a><a class="sib" href="/vision/school-community-screening/"><b>School &amp; Community Vision Screening</b><span>Screen groups and leave with a referral list.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=vision">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Vision Screening in Clinics &amp; Workplaces ================= -->
+<main class="view" id="v-uc-vision-screening" data-view="vision/vision-screening">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:vision-uc-workplace.jpg}}" alt="An employee in a shirt and tie sits in a VR headset in an office meeting room beside a clinic assistant"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Vision care &#183; Use case</div>
+        <h1>Vision Screening in Clinics &amp; Workplaces</h1>
+        <p class="lead"><b>A guided VR eye test in under ten minutes.</b> Six vision checks are completed in sequence, with each result shown as clear or refer.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=vision">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/">Explore VR vision therapy</a></div>
+        <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>A trained assistant guides the person through six vision checks inside the headset. A detailed screening report is available at the end, showing which results are clear and which require referral.</p>
+        <h3 class="uh">Who buys it</h3><p>Eye clinics, hospitals, primary care networks and employers.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset and a trained assistant. Screening indicates when an ophthalmologist should be consulted and is not a diagnosis.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Visual acuity</li><li>Contrast sensitivity</li><li>Depth perception</li><li>Eye coordination</li><li>Colour vision</li><li>Near focusing</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR vision therapy use cases</h2></div><p><a class="lnk" href="/vision/">See the full VR vision therapy programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/vision/lazy-eye-therapy/"><b>Lazy Eye Therapy in the Clinic</b><span>VR vision therapy for structured lazy eye treatment.</span></a><a class="sib" href="/vision/school-community-screening/"><b>School &amp; Community Vision Screening</b><span>Screen groups and leave with a referral list.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=vision">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: School &amp; Community Vision Screening ================= -->
+<main class="view" id="v-uc-school-community-screening" data-view="vision/school-community-screening">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:vision-screening-school.jpg}}" alt="A row of schoolchildren in uniform wait on chairs while the nearest child wears a VR headset"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Vision care &#183; Use case</div>
+        <h1>School &amp; Community Vision Screening</h1>
+        <p class="lead"><b>Screen groups and leave with a referral list.</b> The guided screening can be run by a trained assistant for school and community programmes, helping identify people who should consult an ophthalmologist.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=vision">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/">Explore VR vision therapy</a></div>
+        <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>The same six checks can be used during school and community screening programmes. A trained non-clinician can run the screening, with results available at the end to identify people requiring ophthalmologist follow-up.</p>
+        <h3 class="uh">Who buys it</h3><p>Government health programmes, non-governmental organisations and school networks.</p>
+        <h3 class="uh">What is needed</h3><p>Meta Quest headset, a chair and an internet connection. A trained assistant runs the screening.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>School-age vision screening</li><li>Community screening</li><li>Population screening</li><li>Undetected vision problems</li><li>Ophthalmologist referral</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR vision therapy use cases</h2></div><p><a class="lnk" href="/vision/">See the full VR vision therapy programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/vision/lazy-eye-therapy/"><b>Lazy Eye Therapy in the Clinic</b><span>VR vision therapy for structured lazy eye treatment.</span></a><a class="sib" href="/vision/vision-screening/"><b>Vision Screening in Clinics &amp; Workplaces</b><span>A guided VR eye test in under ten minutes.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=vision">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Workplace Well-being ================= -->
+<main class="view" id="v-uc-workplace-wellbeing" data-view="well-being/workplace-wellbeing">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:home-session-mind.jpg}}" alt="An office worker relaxes in an armchair wearing a VR headset and headphones in a quiet corner of the office"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Well-being &#183; Use case</div>
+        <h1>Workplace Well-being</h1>
+        <p class="lead"><b>Ten quiet minutes, without leaving the building.</b> A short reset during the working day, with a DASS check-in and posture scans for desk workers. Nothing to book and no instructor needed.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=well-being">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/">Explore VR well-being</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Journeys are used as a short reset during the working day, with a DASS check-in at the start and posture scans for desk workers. Nothing to book and no instructor is needed.</p>
+        <h3 class="uh">Who buys it</h3><p>Employers, human resources teams and occupational health providers.</p>
+        <h3 class="uh">What is needed</h3><p>Headset and headphones. A quiet corner and a chair.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Workplace stress</li><li>Day-to-day mindfulness</li><li>Postural strain from desk work</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR well-being use cases</h2></div><p><a class="lnk" href="/well-being/">See the full VR well-being programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/well-being/care-settings/"><b>Well-being in Care Settings</b><span>The same journeys, used on the ward.</span></a><a class="sib" href="/well-being/at-home/"><b>At Home</b><span>A daily practice that fits in a drawer.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=well-being">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: Well-being in Care Settings ================= -->
+<main class="view" id="v-uc-care-settings" data-view="well-being/care-settings">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:wellbeing-ward.jpg}}" alt="An elderly man sits in a high-backed chair wearing a VR headset and headphones in a bright hospital day room"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Well-being &#183; Use case</div>
+        <h1>Well-being in Care Settings</h1>
+        <p class="lead"><b>The same journeys, used on the ward.</b> The guided journeys can be used to settle patients before a procedure, between therapy sessions or as quiet time in a care home. Sessions are taken seated and require no prior experience.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=well-being">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/">Explore VR well-being</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Used to settle patients before a procedure, between therapy sessions or as quiet time in a care home. Taken seated, with no experience needed.</p>
+        <h3 class="uh">Who buys it</h3><p>Hospitals, senior care homes and rehabilitation centres.</p>
+        <h3 class="uh">What is needed</h3><p>Headset and headphones.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Anxiety before procedures</li><li>Long waits between therapy sessions</li><li>Quiet time in residential care</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR well-being use cases</h2></div><p><a class="lnk" href="/well-being/">See the full VR well-being programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/well-being/workplace-wellbeing/"><b>Workplace Well-being</b><span>Ten quiet minutes, without leaving the building.</span></a><a class="sib" href="/well-being/at-home/"><b>At Home</b><span>A daily practice that fits in a drawer.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=well-being">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= USE CASE: At Home ================= -->
+<main class="view" id="v-uc-at-home" data-view="well-being/at-home">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:wellbeing-home.jpg}}" alt="A young woman sits cross-legged on a sofa at home wearing mobile VR goggles and earbuds"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">Well-being &#183; Use case</div>
+        <h1>At Home</h1>
+        <p class="lead"><b>A daily practice that fits in a drawer.</b> The 11 guided journeys can be used at home through lightweight VR goggles and a phone, giving individuals and families access to guided well-being sessions.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=well-being">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/">Explore VR well-being</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight whatis ucd" id="uc-detail">
+    <div class="wrap wgrid">
+      <div class="rt">
+        <div class="eb">Use case</div><h2>What it does</h2><p>Provides access to the 11 guided journeys through lightweight mobile VR goggles and a phone. Sessions are seated and designed for regular home use.</p>
+        <h3 class="uh">Who buys it</h3><p>Individuals and families.</p>
+        <h3 class="uh">What is needed</h3><p>Lightweight VR goggles that hold a mobile phone.</p>
+      </div>
+      <aside class="facts rt" aria-label="What it addresses"><div class="ft">What it addresses</div><ul><li>Daily relaxation practice</li><li>Guided mindfulness</li><li>Stress relief</li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight ucsib">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">More use cases</div><h2>Other VR well-being use cases</h2></div><p><a class="lnk" href="/well-being/">See the full VR well-being programme <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="sibs rt"><a class="sib" href="/well-being/workplace-wellbeing/"><b>Workplace Well-being</b><span>Ten quiet minutes, without leaving the building.</span></a><a class="sib" href="/well-being/care-settings/"><b>Well-being in Care Settings</b><span>The same journeys, used on the ward.</span></a></div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See it on a headset.</h2><p>A demo takes thirty minutes, in person or online. Bring the people who would run it, and we will show this use case in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=well-being">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
+</main>
+
+<!-- ================= PATENT ================= -->
+<main class="view" id="v-patent-page" data-view="patent">
+  <section class="sec creds" id="patent">
+    <div class="wrap">
+      <!--CRUMBS-->
+      <div class="head2 rt">
+        <div><div class="eb">Patent</div><h1 class="as-h2">Indian Patent 575729: a patented method, not a claim.</h1></div>
+        <p>CogniHab&#8217;s vision programme rests on a granted Indian patent for assessing and correcting vision inside an immersive system. It covers the VR lazy eye therapy and the vision screening.</p>
+      </div>
+      <div class="patrow rt">
+        <div class="patcard">
+          <div class="patno"><span class="eb">Patent number</span><b>575729</b></div>
+          <h3>Immersive System and Method for Vision Assessment and Correction</h3>
+          <dl class="patmeta">
+            <div><dt>Granted by</dt><dd>The Patent Office, Government of India</dd></div>
+            <div><dt>Patentee</dt><dd>CogniHab Healthcare Solutions Private Limited</dd></div>
+            <div><dt>Application</dt><dd>202411011027</dd></div>
+            <div><dt>Filed</dt><dd>16 February 2024</dd></div>
+            <div><dt>Granted</dt><dd>12 December 2025</dd></div>
+            <div><dt>Term</dt><dd>20 years from the date of filing</dd></div>
+          </dl>
+        </div>
+        <figure class="patfig rv">
+          <a href="/images/patent-certificate-cognihab.jpg" target="_blank" rel="noopener" aria-label="View the full patent certificate">
+            <img src="{{IMG:patent-certificate-cognihab.jpg}}" alt="Patent certificate 575729 issued by the Patent Office, Government of India, to CogniHab Healthcare Solutions Private Limited">
+          </a>
+          <figcaption>The granted certificate. Click to view full size.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the patented programme run.</h2><p>Bring an optometrist or an ophthalmologist. We will run the lazy eye therapy and the screening check on someone in the room.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=vision">Book a vision demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/">Explore VR vision therapy</a></div></div></section>
+</main>
+
+<!-- ================= ABOUT US ================= -->
+<main class="view" id="v-about-us" data-view="about-us">
+  <section class="pg">
+    <div class="pghero"><img class="pgimg" src="{{IMG:home-session-vision.jpg}}" alt="A clinician guides a child wearing a VR headset through a CogniHab session"><div class="scrim"></div></div>
+    <div class="wrap"><div class="rt">
+        <!--CRUMBS-->
+        <div class="eb">About Us</div>
+        <h1>About CogniHab</h1>
+        <p class="sub">Rise above your limits with virtual reality.</p>
+        <p class="lead">CogniHab is a digital therapeutics company based in Jaipur, India. We deliver VR rehabilitation, VR vision therapy and screening, and guided VR well-being on one headset, for hospitals, clinics, employers, public health programmes, fitness centres and people at home. Every session is scored, and every programme ends with a report.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Book a Demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/advisors/">Meet Our Clinical Advisors</a></div>
+      </div></div>
+  </section>
+
+  <section class="sec tight" id="a-mission">
+    <div class="wrap wgrid">
+      <div class="rt"><div class="eb">Our mission</div><h2>Our Mission</h2></div>
+      <div class="rt prose2"><p>CogniHab is an organisation set up to help patients rise above their limits through the use of virtual reality technology, by making therapy something people want to finish, and progress something clinicians can measure.</p><p>We believe recovery goes faster when treatment is something people want to do, and that a result should be a number, not an impression.</p></div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="a-programmes" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">What we do</div><h2>Three Programmes, One Headset</h2></div><p>One Meta Quest headset carries all three programmes, and each has its own scans, sessions and reports.</p></div>
+      <div class="acards rt"><article class="acard"><div class="im"><img data-src="body" alt="CogniHab Rehabilitation programme"></div><div class="bd"><div class="eb">Rehabilitation</div><h3>VR Rehabilitation</h3><p>VR rehabilitation for stroke and neurological conditions, orthopaedic and post-surgical recovery, spinal injury, senior care and fall prevention, and sports.</p><a class="lnk" href="/rehabilitation/">Explore Rehabilitation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></article><article class="acard"><div class="im"><img data-src="vision" alt="CogniHab Vision programme"></div><div class="bd"><div class="eb">Vision</div><h3>VR Vision Therapy &amp; Screening</h3><p>Patented VR lazy eye (amblyopia) therapy and a 10-minute vision screening for clinics, workplaces, schools and communities.</p><a class="lnk" href="/vision/">Explore Vision <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></article><article class="acard"><div class="im"><img data-src="mind" alt="CogniHab Well-being programme"></div><div class="bd"><div class="eb">Well-being</div><h3>VR Well-being</h3><p>Eleven guided VR meditation journeys for workplaces, care settings and home.</p><a class="lnk" href="/well-being/">Explore Well-being <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></article></div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="a-build">
+    <div class="wrap wgrid">
+      <div class="rt"><div class="eb">How we build</div><h2>Built With the Clinicians Who Use It</h2></div>
+      <div class="rt prose2"><p>All our modules are created in house under the guidance of senior doctors and renowned professionals. Every programme follows the same loop: assess, treat, track and report. It starts with a measurement, scores every session and ends with a report the patient, family or referring doctor can read.</p>
+        <p><a class="lnk" href="/research/">Read Our Published Research <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="a-faces" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">Our clinical advisors</div><h2>Faces Behind CogniHab</h2></div><p><a class="lnk" href="/advisors/">Meet our clinical advisors <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></p></div>
+      <div class="faces rt"><a class="face" href="/advisors/"><img src="{{IMG:advisor-vijay-beniwal.jpg}}" alt="Dr. Vijay Beniwal, Senior Orthopedician"><span>Dr. Vijay Beniwal</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-ravindra-gupta.jpg}}" alt="Dr. Ravindra Gupta, MD Medicine and Cardiologist"><span>Dr. Ravindra Gupta</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-isha-aggarwal.jpg}}" alt="Isha Aggarwal, Consulting Ophthalmologist"><span>Isha Aggarwal</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-smita-kapoor-grover.jpg}}" alt="Dr. Smita Kapoor Grover, Paediatric Ophthalmologist and Strabismus Specialist"><span>Dr. Smita Kapoor Grover</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-keerti-bhusan-pradhan.jpg}}" alt="Keerti Bhusan Pradhan, Senior Healthcare Management Professional"><span>Keerti Bhusan Pradhan</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-al-bhatt.jpg}}" alt="Dr. AL Bhatt, Senior Urologist"><span>Dr. AL Bhatt</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-alok-gupta.jpg}}" alt="Dr. Alok Gupta, MD Medicine"><span>Dr. Alok Gupta</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-anil-talwar.jpg}}" alt="Dr. Anil Talwar, MD Medicine"><span>Dr. Anil Talwar</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-anita-talwar.jpg}}" alt="Dr. Anita Talwar, Senior Gynaecologist"><span>Dr. Anita Talwar</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-mahender-singh.jpg}}" alt="Dr. Mahender Singh, Senior Paediatrician"><span>Dr. Mahender Singh</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-pawan-gupta.jpg}}" alt="Dr. Pawan Gupta, Senior Oncologist"><span>Dr. Pawan Gupta</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-sukhjinder-chawla.jpg}}" alt="Dr. Sukhjinder Chawla, Senior Radiologist"><span>Dr. Sukhjinder Chawla</span></a><a class="face" href="/advisors/"><img src="{{IMG:advisor-sunil-bhutani.jpg}}" alt="Dr. Sunil Bhutani, Senior Paediatrician"><span>Dr. Sunil Bhutani</span></a></div>
+    </div>
+  </section>
+
+  <section class="sec tight trust" id="a-trust">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">Trusted institutions</div><h2>Healthcare Institutions</h2></div><p>CogniHab programmes have been built, studied and used with these institutions.</p></div>
+      <div class="trustrow rt">
+          <div class="tlogo"><img src="{{IMG:partner-aiims.jpg}}" alt="All India Institute of Medical Sciences"></div>
+          <div class="tlogo"><img src="{{IMG:partner-spinal-injuries-centre.jpg}}" alt="Indian Spinal Injuries Centre"></div>
+          <div class="tlogo"><img src="{{IMG:partner-guru-nanak-mission.jpg}}" alt="Guru Nanak Mission Medical and Education Trust"></div>
+          <div class="tlogo"><img src="{{IMG:partner-national-institute-ayurveda.jpg}}" alt="National Institute of Ayurveda"></div>
+          <div class="tlogo"><img src="{{IMG:partner-shroff-eye-centre.jpg}}" alt="Shroff Eye Centre"></div>
+          <div class="tlogo"><img src="{{IMG:partner-lady-hardinge.jpg}}" alt="Lady Hardinge Medical College"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="a-faq">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb">FAQs</div><h2>About CogniHab: Common Questions</h2></div>
+        <p>Who we are, where we work and what stands behind the programmes.</p>
+      </div>
+      <div class="list rt">
+        <div class="q"><button aria-expanded="false">What does CogniHab do?<i></i></button><div class="a"><p>CogniHab builds VR digital therapeutics: VR rehabilitation, VR vision therapy and screening, and guided VR well-being, all on one headset, with every session scored and reported.</p></div></div>
+        <div class="q"><button aria-expanded="false">Where is CogniHab based?<i></i></button><div class="a"><p>Our headquarters is in Jaipur, Rajasthan, India, and we have an office in Lewes, Delaware, United States.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is CogniHab&#8217;s technology patented?<i></i></button><div class="a"><p>Yes. <a href="/patent/">Indian Patent 575729</a>, granted on 12 December 2025, covers our immersive system and method for vision assessment and correction.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is there published research?<i></i></button><div class="a"><p>Yes. Our lazy eye programme was published in the <i>Indian Journal of Community Health</i> in 2023. <a href="/research/">Read the research</a>.</p></div></div>
+        <div class="q"><button aria-expanded="false">Who uses CogniHab?<i></i></button><div class="a"><p>Hospitals, rehabilitation and physiotherapy centres, eye clinics, employers, senior care homes, government health programmes, fitness centres, schools and individuals at home.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>Work With Us</h2><p>Hospitals, clinics, employers and public health programmes: see a programme on a headset in thirty minutes. Researchers and institutions: talk to us about collaboration.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/">Book a Demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/?topic=collaborate">Collaborate With Us</a></div></div></section>
+</main>
+
 
 </div>
 

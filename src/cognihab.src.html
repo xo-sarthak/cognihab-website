@@ -701,6 +701,7 @@ body.has-ann .ch .chip,body.has-ann .ch .big{margin-top:40px}
 .head2 h2{color:var(--navy)}
 .head2 p{color:var(--mute);max-width:44ch;font-size:clamp(1rem,1.3vw,1.18rem)}
 .head2 .eb{margin-bottom:.9rem}
+h1.as-h2{font-size:clamp(2.1rem,4.6vw,3.9rem);color:var(--navy)}
 h2{text-wrap:balance}
 
 /* equipment block */
@@ -979,33 +980,33 @@ h2{text-wrap:balance}
 
 <div class="ann" id="ann" hidden><div class="ann-in"><span class="ann-tag">Announcements</span><div class="ann-vp"><div class="ann-track" id="annTrack"></div></div><button class="ann-x" id="annClose" aria-label="Dismiss announcements">&#215;</button></div></div>
 <header class="hdr" id="hdr">
-  <a class="logo" href="#home" aria-label="CogniHab home"><img id="logoImg" src="{{LOGO}}" alt="CogniHab"></a>
+  <a class="logo" href="/" aria-label="CogniHab home"><img id="logoImg" src="{{LOGO}}" alt="CogniHab"></a>
   <nav aria-label="Primary">
-    <a href="#home" data-nav="home">Home</a>
-    <a href="#rehabilitation" data-nav="rehabilitation">Rehabilitation</a>
-    <a href="#vision" data-nav="vision">Vision</a>
-    <a href="#well-being" data-nav="well-being">Well-being</a>
-    <a href="#vision/patent">Patent</a>
-    <a href="#research" data-nav="research">Research</a>
-    <a href="#advisors" data-nav="advisors">Advisors</a>
+    <a href="/" data-nav="home">Home</a>
+    <a href="/rehabilitation/" data-nav="rehabilitation">Rehabilitation</a>
+    <a href="/vision/" data-nav="vision">Vision</a>
+    <a href="/well-being/" data-nav="well-being">Well-being</a>
+    <a href="/vision/#v-patent">Patent</a>
+    <a href="/research/" data-nav="research">Research</a>
+    <a href="/advisors/" data-nav="advisors">Advisors</a>
     <a href="https://cognihab.com/blog/" target="_blank" rel="noopener">Blog</a>
   </nav>
   <div class="cta">
-    <a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+    <a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="menu" id="menu" aria-hidden="true">
   <div class="eb w">CogniHab · Digital Therapeutics</div>
-  <a href="#home">Home</a>
-  <a href="#rehabilitation">Rehabilitation</a>
-  <a href="#vision">Vision</a>
-  <a href="#well-being">Well-being</a>
-  <a href="#vision/patent">Lazy eye patent</a>
-  <a href="#research">Published research</a>
-  <a href="#advisors">Advisors</a>
+  <a href="/">Home</a>
+  <a href="/rehabilitation/">Rehabilitation</a>
+  <a href="/vision/">Vision</a>
+  <a href="/well-being/">Well-being</a>
+  <a href="/vision/#v-patent">Lazy eye patent</a>
+  <a href="/research/">Published research</a>
+  <a href="/advisors/">Advisors</a>
   <a href="https://cognihab.com/blog/" target="_blank" rel="noopener">Blog</a>
-  <a href="#contact">Contact Us</a>
+  <a href="/contact/">Contact Us</a>
 </div>
 
 <div id="main">
@@ -1038,8 +1039,8 @@ h2{text-wrap:balance}
         <h1 class="hl0">Digital Therapeutics you can <em>measure.</em></h1>
         <p class="lead hl0">CogniHab is a digital therapeutics platform delivered through virtual reality, for hospitals, clinics, employers, public health programmes, fitness centres and people at home. Each person trains inside guided immersive sessions, the system scores every movement, and the report is ready at the end.</p>
         <div class="acts hl0">
-          <a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
-          <a class="btn o" href="#home/walkthrough">See what it does</a>
+          <a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn o" href="/#walkthrough">See what it does</a>
         </div>
         <div class="reads" id="reads" aria-hidden="true">
         <div data-at=".06"><span>Posture scan</span><b>4 views</b><i></i></div>
@@ -1101,7 +1102,7 @@ h2{text-wrap:balance}
         <button class="playbtn" id="playBtn" type="button" aria-label="Play the film"><span class="pb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="pl">Play the film</span><span class="pd">3 min 35 s &#183; with sound</span></button>
       </div>
       <div class="walk-row rt">
-        <a class="lnk" href="#contact">Request a live demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="lnk" href="/contact/">Request a live demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
       </div>
     </div>
   </section>
@@ -1122,7 +1123,7 @@ h2{text-wrap:balance}
         <div class="cap"><b>What the clinician sees</b>Live skeleton tracking, joint angles and a score for every repetition.</div>
         <div class="plate rt" id="plate-body">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="#rehabilitation">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/rehabilitation/">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb g">Programme · Rehabilitation</div>
               <h3>Movement, measured.</h3>
               <ul>
@@ -1133,7 +1134,7 @@ h2{text-wrap:balance}
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset + phone camera · or phone only</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-body">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="#rehabilitation">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/rehabilitation/">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>What it does</h4>
               <p>A posture scan and a joint movement scan set the patient's baseline in a few minutes. From there the patient works through therapy tasks in the headset, or follows a coach through exercises while the phone camera checks their form on every repetition. Everything is scored, so progress shows up as numbers rather than impressions.</p>
               <h4>What it is used for</h4>
@@ -1163,7 +1164,7 @@ h2{text-wrap:balance}
         <div class="cap"><b>Screening, not diagnosis</b>Anyone flagged is referred to an ophthalmologist.</div>
         <div class="plate v rt" id="plate-vision">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="#vision">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/vision/">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb">Programme · Vision care</div>
               <h3>Eye care a child will sit still for.</h3>
               <ul>
@@ -1174,7 +1175,7 @@ h2{text-wrap:balance}
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset in clinic · goggles at home for lazy eye</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-vision">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="#vision">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/vision/">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>Lazy eye therapy</h4>
               <p>Each eye is shown a different part of the same scene, so the game can only be completed if the weaker eye is doing its share of the work. The child plays, and the therapy happens while they play. Sessions run about fifteen minutes and the clinic can see whether they are being completed between visits.</p>
               <h4>Vision screening</h4>
@@ -1207,7 +1208,7 @@ h2{text-wrap:balance}
         <div class="cap"><b>Eleven guided journeys</b>Breathing, humming and voice, no prior experience needed.</div>
         <div class="plate m rt" id="plate-mind">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="#well-being">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/well-being/">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb" style="color:var(--royal)">Programme · Well-being</div>
               <h3>A quieter room, anywhere.</h3>
               <ul>
@@ -1218,7 +1219,7 @@ h2{text-wrap:balance}
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset + headphones · or mobile VR goggles + phone</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-mind">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="#well-being">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/well-being/">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>What it does</h4>
               <p>The person puts on the headset and is taken through a natural scene while a voice guides their breathing. Some journeys use humming or the voice itself to settle the body. They sit throughout, and nothing is asked of them beyond following along.</p>
               <h4>What it is used for</h4>
@@ -1621,8 +1622,8 @@ h2{text-wrap:balance}
       <h2>See it on a headset.</h2>
       <p class="lead">A demo takes thirty minutes, in person or online. Bring a clinician, a therapist or a programme lead, and we will show the programme that fits your setting.</p>
       <div class="acts">
-        <a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
-        <a class="btn o" href="#rehabilitation">Browse the programmes</a>
+        <a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="btn o" href="/rehabilitation/">Browse the programmes</a>
       </div>
     </div>
   </section>
@@ -1636,7 +1637,7 @@ h2{text-wrap:balance}
         <div class="eb">Rehabilitation</div>
         <h1>Rehabilitation that scores itself.</h1>
         <p class="lead">Two scans that set a baseline in minutes. Thirty-four gamified tasks for the upper body and everyday actions. An exercise library of more than a thousand movements with a coach on screen and a camera checking the form. One report at the end of every session.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="#rehabilitation/tasks">See the tasks</a></div>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/#tasks">See the tasks</a></div>
       </div></div>
   </section>
 
@@ -1654,7 +1655,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="sec" id="r-tasks">
+  <section class="sec" id="tasks">
     <div class="wrap">
       <div class="head2 rt">
         <div><div class="eb g">The tasks</div><h2>Thirty-four tasks. Played with the controllers, or with bare hands.</h2></div>
@@ -1817,7 +1818,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the rehabilitation programme on a headset.</h2><p>Bring a physiotherapist or an occupational therapist. We will scan someone in the room and show the report.</p></div><a class="btn w" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the rehabilitation programme on a headset.</h2><p>Bring a physiotherapist or an occupational therapist. We will scan someone in the room and show the report.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
 </main>
 
 <!-- ================= VISION ================= -->
@@ -1828,7 +1829,7 @@ h2{text-wrap:balance}
         <div class="eb">Vision care</div>
         <h1>Screen widely. Treat what you find.</h1>
         <p class="lead">An immersive therapy for lazy eye that a child will actually finish, and a guided screening check of several tests, under ten minutes, that tells you who needs the ophthalmologist. Built for eye clinics, schools, workplaces and community programmes.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="#vision/screening">The screening check</a></div>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/#screening">The screening check</a></div>
         <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
       </div></div>
   </section>
@@ -1849,7 +1850,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="sec" id="v-screening">
+  <section class="sec" id="screening">
     <div class="wrap">
       <div class="head2 rt">
         <div><div class="eb">Vision screening</div><h2>A ten-minute check that tells you who needs the ophthalmologist.</h2></div>
@@ -1937,7 +1938,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the screening check run in ten minutes.</h2><p>Bring an optometrist or a school health lead. We will run the check on someone in the room and show the report.</p></div><a class="btn w" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the screening check run in ten minutes.</h2><p>Bring an optometrist or a school health lead. We will run the check on someone in the room and show the report.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
 </main>
 
 <!-- ================= WELL-BEING ================= -->
@@ -1948,7 +1949,7 @@ h2{text-wrap:balance}
         <div class="eb">Well-being</div>
         <h1>A quieter room, anywhere.</h1>
         <p class="lead">Eleven guided journeys. Eight to ten minutes each, taken sitting down, with no experience needed and no instructor in the room. For workplaces, for wards, for care homes and for home.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="#well-being/employers">For employers</a></div>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/#w-employers">For employers</a></div>
       </div></div>
   </section>
 
@@ -2003,7 +2004,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>Take ten quiet minutes on a headset.</h2><p>Bring an HR lead or a ward manager. We will run one journey in the room.</p></div><a class="btn w" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>Take ten quiet minutes on a headset.</h2><p>Bring an HR lead or a ward manager. We will run one journey in the room.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
 </main>
 
 <!-- ================= ADVISORS ================= -->
@@ -2011,7 +2012,7 @@ h2{text-wrap:balance}
   <section class="sec">
     <div class="wrap">
       <div class="head2 rt">
-        <div><div class="eb">Our advisors</div><h2>Built and validated with the clinicians who use it.</h2></div>
+        <div><div class="eb">Our advisors</div><h1 class="as-h2">Built and validated with the clinicians who use it.</h1></div>
         <p>Every programme is shaped and checked by practising specialists across ophthalmology, orthopaedics, rehabilitation, paediatrics, oncology and healthcare management. They tell us what a session has to do before it is worth a patient&#8217;s time.</p>
       </div>
       <div class="advgrid">
@@ -2033,7 +2034,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>Want a clinician&#8217;s view before you commit?</h2><p>We will arrange a conversation with someone using the programme in a setting like yours.</p></div><a class="btn w" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>Want a clinician&#8217;s view before you commit?</h2><p>We will arrange a conversation with someone using the programme in a setting like yours.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
 </main>
 
 <!-- ================= RESEARCH ================= -->
@@ -2041,7 +2042,7 @@ h2{text-wrap:balance}
   <section class="sec">
     <div class="wrap">
       <div class="head2 rt">
-        <div><div class="eb">Published research</div><h2>The lazy eye programme, in a peer-reviewed journal.</h2></div>
+        <div><div class="eb">Published research</div><h1 class="as-h2">The lazy eye programme, in a peer-reviewed journal.</h1></div>
         <p>A commentary in the <em>Indian Journal of Community Health</em> on why amblyopia goes undetected in India, why the conventional treatments are so often abandoned, and what changed when the therapy became something a child would actually finish.</p>
       </div>
 
@@ -2105,7 +2106,7 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the lazy eye programme run.</h2><p>Bring an optometrist or an ophthalmologist. We will run a session on someone in the room and show the report.</p></div><a class="btn w" href="#contact">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the lazy eye programme run.</h2><p>Bring an optometrist or an ophthalmologist. We will run a session on someone in the room and show the report.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
 </main>
 
 <!-- ================= CONTACT ================= -->
@@ -2168,20 +2169,20 @@ h2{text-wrap:balance}
     <div class="fcols">
       <div class="fbrand">
         <img id="footLogo" alt="CogniHab">
-        <a class="fmail" href="mailto:namaste@cognihab.com">namaste@cognihab.com</a>
+        <a class="fmail" href="mailto:info@cognihab.com">info@cognihab.com</a>
         <a class="fmail" href="tel:+917426060606">+91-7426-060606</a>
         <div class="fivrha"><img src="{{IMG:partner-ivrha.jpg}}" alt="International Virtual Reality Healthcare Association"><span>IVRHA &#8212; First Indian Member</span></div>
       </div>
       <div class="fcol">
         <h4>Products</h4>
-        <a href="#rehabilitation">VR Body Rehabilitation Suite</a>
-        <a href="#vision">VR Vision Therapy Suite</a>
-        <a href="#well-being">VR Mind and Well-being Suite</a>
+        <a href="/rehabilitation/">VR Body Rehabilitation Suite</a>
+        <a href="/vision/">VR Vision Therapy Suite</a>
+        <a href="/well-being/">VR Mind and Well-being Suite</a>
       </div>
       <div class="fcol">
         <h4>Key links in our website</h4>
         <a href="https://cognihab.com/blog/" target="_blank" rel="noopener">Blogs</a>
-        <a href="#contact">Let&#8217;s Collaborate</a>
+        <a href="/contact/">Let&#8217;s Collaborate</a>
         <a href="https://cognihab.com/terms-and-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
         <a href="https://cognihab.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
         <a href="https://cognihab.com/returns-policy/" target="_blank" rel="noopener">Return Policy</a>
@@ -2238,10 +2239,10 @@ h2{text-wrap:balance}
    Leave a value empty ("") to hide that contact option.
    ====================================================================== */
 const SITE_CONFIG = {
-  phone: "+91 7426 060606",
+  phone: "+91 74260 60606",
   whatsapp: "917426060606",
   email: "namaste@cognihab.com",        // where form submissions go
-  contactEmail: "namaste@cognihab.com", // the public address shown on the site
+  contactEmail: "info@cognihab.com"   , // the public address shown on the site
   formEndpoint: "",
   netlifyForms: true,
   relayEndpoint: "https://formsubmit.co/ajax/namaste@cognihab.com",
@@ -2263,9 +2264,11 @@ const mob=()=>innerWidth<=760;
 /* ---- asset sharing (avoid duplicating base64) ---- */
 const logo=$('#logoImg').src;
 $('#footLogo').src=logo;
-const imgs={body:$('#p-body img').src,vision:$('#p-vision img').src,mind:$('#p-mind img').src};
-$('.wb img').src=imgs.mind;
-$$('img[data-src]').forEach(i=>{i.src=imgs[i.dataset.src];});
+if($('#p-body img')){  /* single file: pillar photos are inlined once, on home, and shared */
+  const imgs={body:$('#p-body img').src,vision:$('#p-vision img').src,mind:$('#p-mind img').src};
+  if($('.wb img'))$('.wb img').src=imgs.mind;
+  $$('img[data-src]').forEach(i=>{i.src=imgs[i.dataset.src];});
+}
 $('#yr').textContent=new Date().getFullYear();
 
 /* ---- reveal observer ---- */
@@ -2294,15 +2297,18 @@ function counters(){
 
 
 /* ---- router ---- */
-const views={home:$('#v-home'),rehabilitation:$('#v-rehabilitation'),vision:$('#v-vision'),'well-being':$('#v-well-being'),advisors:$('#v-advisors'),research:$('#v-research'),contact:$('#v-contact')};
+/* The deployed site is one page per URL; the single-file build holds every view and routes by hash. */
+const views={};$$('main.view').forEach(m=>{views[m.dataset.view]=m;});
+const MPA=Object.keys(views).length===1;
 const legacy={'use-cases':'rehabilitation','use-cases/body':'rehabilitation','use-cases/vision':'vision','use-cases/mind':'well-being'};
-const anchors={rehabilitation:{tasks:'r-tasks',ways:'r-ways',library:'r-library',scans:'r-scans',report:'r-report',cases:'r-cases',equipment:'r-equipment'},vision:{lazy:'v-lazy',screening:'v-screening',cases:'v-cases',equipment:'v-equipment',patent:'v-patent'},'well-being':{journeys:'w-journeys',employers:'w-employers',cases:'w-cases',equipment:'w-equipment'},home:{kit:'kit',walkthrough:'walkthrough',session:'session',how:'how',who:'who',faq:'faq',proof:'proof',fromblog:'fromblog'}};
-let current='home';
+const anchors={rehabilitation:{tasks:'tasks',ways:'r-ways',library:'r-library',scans:'r-scans',report:'r-report',cases:'r-cases',equipment:'r-equipment'},vision:{lazy:'v-lazy',screening:'screening',cases:'v-cases',equipment:'v-equipment',patent:'v-patent'},'well-being':{journeys:'w-journeys',employers:'w-employers',cases:'w-cases',equipment:'w-equipment'},home:{kit:'kit',walkthrough:'walkthrough',session:'session',how:'how',who:'who',faq:'faq',proof:'proof',fromblog:'fromblog'}};
+let current=MPA?Object.keys(views)[0]:'home';
+const section=v=>v.split('/')[0];
 function parse(){
   let h=location.hash.replace(/^#\/?/,'');
   if(legacy[h])h=legacy[h];
-  const [view,sub]=h.split('/');
-  if(views[view])return{view,sub:sub||''};
+  const parts=h.split('/');
+  for(let i=parts.length;i>0;i--){const k=parts.slice(0,i).join('/');if(views[k])return{view:k,sub:parts.slice(i).join('/')};}
   if(h&&document.getElementById(h))return{view:'home',sub:h};
   return{view:'home',sub:''};
 }
@@ -2313,7 +2319,7 @@ function route(){
     Object.values(views).forEach(v=>{v.classList.remove('on');});
     views[view].classList.add('on');
     current=view;
-    $$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===view));
+    $$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===section(view)));
     $$('.flip').forEach(f=>f.classList.remove('flip'));
     closeMenu();
   }
@@ -2327,19 +2333,28 @@ function route(){
   });
   if(view==='contact'){setTimeout(()=>{const f=$('#fName');if(f&&!mob())f.focus({preventScroll:true});},500);}
 }
-addEventListener('hashchange',route);
 addEventListener('pageshow',()=>{$$('.flip').forEach(f=>f.classList.remove('flip'));});
-$$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===parse().view));
-Object.values(views).forEach(v=>v.classList.remove('on'));
-views[parse().view].classList.add('on');current=parse().view;
-route();
+if(MPA){
+  /* old single-page links (/#rehabilitation, /#vision/patent) land on their own URLs now */
+  const h=location.hash.replace(/^#\/?/,''),old=legacy[h]||h,[top,...rest]=old.split('/');
+  const PAGES=['rehabilitation','vision','well-being','about-us','patent','research','advisors','contact'];
+  if(current==='home'&&PAGES.includes(top))location.replace(top==='vision'&&rest[0]==='patent'?'/patent/':'/'+top+'/'+(rest.length?'#'+rest.join('/'):''));
+  $$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===section(current)));
+  requestAnimationFrame(observe);
+}else{
+  addEventListener('hashchange',route);
+  $$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===section(parse().view)));
+  Object.values(views).forEach(v=>v.classList.remove('on'));
+  views[parse().view].classList.add('on');current=parse().view;
+  route();
+}
 
 /* ---- header ---- */
 const hdr=$('#hdr');let lastY=0;
 function header(){
   const y=scrollY;
   hdr.classList.toggle('scrolled',y>40);
-  const inHero=current==='home'&&y<hero.offsetHeight-innerHeight+240;
+  const inHero=current==='home'&&hero&&y<hero.offsetHeight-innerHeight+240;
   const down=y-lastY>8,up=lastY-y>4;
   if(up||inHero||document.body.classList.contains('menu-open'))hdr.classList.remove('hide');
   else if(down)hdr.classList.add('hide');
@@ -2381,14 +2396,16 @@ function drawPose(t){
 }
 let dur=0,cur=0;
 function meta(){if(dur)return;dur=v.duration||0;if(dur)v.currentTime=0.01;}
-if(v.readyState>=1)meta();else{v.addEventListener('loadedmetadata',meta);v.addEventListener('durationchange',meta);}
-if(rm){v.loop=true;v.autoplay=true;v.play().catch(()=>{});}
+if(v){
+  if(v.readyState>=1)meta();else{v.addEventListener('loadedmetadata',meta);v.addEventListener('durationchange',meta);}
+  if(rm){v.loop=true;v.autoplay=true;v.play().catch(()=>{});}
+}
 function heroProg(){
   const z=hero.offsetHeight-innerHeight;if(z<=0)return 0;
   return Math.min(1,Math.max(0,(scrollY-hero.offsetTop)/z));
 }
 function heroTick(){
-  if(current!=='home')return;
+  if(current!=='home'||!hero)return;
   const p=heroProg();
   if(!rm&&dur){
     const t=(mob()?0.5+0.5*p:p)*(dur-0.06);cur+=(t-cur)*.16;
@@ -2410,9 +2427,10 @@ function heroTick(){
 
 
 /* ---- horizontal ride ---- */
-const hs=$('#how'),tr=$('#track'),panels=$$('.panel',tr);
+const hs=$('#how'),tr=$('#track'),panels=tr?$$('.panel',tr):[];
 let rcur=0,rtgt=0;
 function rideCalc(){
+  if(!hs)return;
   if(mob()||rm){panels.forEach(p=>p.classList.add('on'));return;}
   const max=hs.offsetHeight-innerHeight;
   const p=Math.min(1,Math.max(0,(scrollY-hs.offsetTop)/max));
@@ -2421,6 +2439,7 @@ function rideCalc(){
   panels.forEach((pn,i)=>{if(i-pos<0.7)pn.classList.add('on');});
 }
 function rideTick(){
+  if(!tr)return;
   if(current!=='home'||mob()||rm){tr.style.transform='';return;}
   rcur+=(rtgt-rcur)*.11;
   tr.style.transform=`translate3d(${-rcur}px,0,0)`;
@@ -2544,14 +2563,14 @@ if(matchMedia('(pointer:fine)').matches&&!rm){
 
 /* ---- contact ---- */
 const C=SITE_CONFIG;
-if(C.whatsapp){const a=$('#waLink');a.hidden=false;a.href='https://wa.me/'+C.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent('Hello CogniHab, I would like to get in touch.');}
-if(C.phone){const a=$('#telLink');a.hidden=false;a.href='tel:'+C.phone.replace(/[^\d+]/g,'');$('#telText').textContent=C.phone;}
+if(C.whatsapp&&$('#waLink')){const a=$('#waLink');a.hidden=false;a.href='https://wa.me/'+C.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent('Hello CogniHab, I would like to get in touch.');}
+if(C.phone&&$('#telLink')){const a=$('#telLink');a.hidden=false;a.href='tel:'+C.phone.replace(/[^\d+]/g,'');$('#telText').textContent=C.phone;}
 const pub=C.contactEmail||C.email;
-if(pub){const a=$('#mailLink');a.hidden=false;a.href='mailto:'+pub;$('#mailText').textContent=pub;}
+if(pub&&$('#mailLink')){const a=$('#mailLink');a.hidden=false;a.href='mailto:'+pub;$('#mailText').textContent=pub;}
 
 const form=$('#demoForm'),fmsg=$('#fmsg');
 function msg(t,cls){fmsg.textContent=t;fmsg.className='fmsg '+cls;}
-form.addEventListener('submit',async e=>{
+if(form)form.addEventListener('submit',async e=>{
   e.preventDefault();
   const bad=$$('[required]',form).find(i=>!i.value.trim()||(i.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(i.value)));
   if(bad){bad.focus();msg(bad.type==='email'?'Enter a valid email address so we can reply.':'Fill in the required fields so we can route your enquiry to the right team.','err');return;}

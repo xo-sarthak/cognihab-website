@@ -80,19 +80,19 @@ export default function AboutUsView() {
               <Link className="lnk" href="/advisors/">Meet our clinical advisors{" "}
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 8h11M9 4l4 4-4 4" /></svg></Link></p></div>
           <div className="faces rt">
-            <Link className="face" href="/advisors/"><img src="/images/advisor-vijay-beniwal.jpg" alt="Dr. Vijay Beniwal, Senior Orthopedician" loading="lazy" decoding="async" /><span>Dr. Vijay Beniwal</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-ravindra-gupta.jpg" alt="Dr. Ravindra Gupta, MD Medicine and Cardiologist" loading="lazy" decoding="async" /><span>Dr. Ravindra Gupta</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-isha-aggarwal.jpg" alt="Isha Aggarwal, Consulting Ophthalmologist" loading="lazy" decoding="async" /><span>Isha Aggarwal</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-smita-kapoor-grover.jpg" alt="Dr. Smita Kapoor Grover, Paediatric Ophthalmologist and Strabismus Specialist" loading="lazy" decoding="async" /><span>Dr. Smita Kapoor Grover</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-keerti-bhusan-pradhan.jpg" alt="Keerti Bhusan Pradhan, Senior Healthcare Management Professional" loading="lazy" decoding="async" /><span>Keerti Bhusan Pradhan</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-al-bhatt.jpg" alt="Dr. AL Bhatt, Senior Urologist" loading="lazy" decoding="async" /><span>Dr. AL Bhatt</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-alok-gupta.jpg" alt="Dr. Alok Gupta, MD Medicine" loading="lazy" decoding="async" /><span>Dr. Alok Gupta</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-anil-talwar.jpg" alt="Dr. Anil Talwar, MD Medicine" loading="lazy" decoding="async" /><span>Dr. Anil Talwar</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-anita-talwar.jpg" alt="Dr. Anita Talwar, Senior Gynaecologist" loading="lazy" decoding="async" /><span>Dr. Anita Talwar</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-mahender-singh.jpg" alt="Dr. Mahender Singh, Senior Paediatrician" loading="lazy" decoding="async" /><span>Dr. Mahender Singh</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-pawan-gupta.jpg" alt="Dr. Pawan Gupta, Senior Oncologist" loading="lazy" decoding="async" /><span>Dr. Pawan Gupta</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-sukhjinder-chawla.jpg" alt="Dr. Sukhjinder Chawla, Senior Radiologist" loading="lazy" decoding="async" /><span>Dr. Sukhjinder Chawla</span></Link>
-            <Link className="face" href="/advisors/"><img src="/images/advisor-sunil-bhutani.jpg" alt="Dr. Sunil Bhutani, Senior Paediatrician" loading="lazy" decoding="async" /><span>Dr. Sunil Bhutani</span></Link></div></div></section>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-vijay-beniwal.jpg" alt="Dr. Vijay Beniwal, Senior Orthopedician" loading="lazy" decoding="async" /><span>Dr. Vijay Beniwal</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-ravindra-gupta.jpg" alt="Dr. Ravindra Gupta, MD Medicine and Cardiologist" loading="lazy" decoding="async" /><span>Dr. Ravindra Gupta</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-isha-aggarwal.jpg" alt="Isha Aggarwal, Consulting Ophthalmologist" loading="lazy" decoding="async" /><span>Isha Aggarwal</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-smita-kapoor-grover.jpg" alt="Dr. Smita Kapoor Grover, Paediatric Ophthalmologist and Strabismus Specialist" loading="lazy" decoding="async" /><span>Dr. Smita Kapoor Grover</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-keerti-bhusan-pradhan.jpg" alt="Keerti Bhusan Pradhan, Senior Healthcare Management Professional" loading="lazy" decoding="async" /><span>Keerti Bhusan Pradhan</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-al-bhatt.jpg" alt="Dr. AL Bhatt, Senior Urologist" loading="lazy" decoding="async" /><span>Dr. AL Bhatt</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-alok-gupta.jpg" alt="Dr. Alok Gupta, MD Medicine" loading="lazy" decoding="async" /><span>Dr. Alok Gupta</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-anil-talwar.jpg" alt="Dr. Anil Talwar, MD Medicine" loading="lazy" decoding="async" /><span>Dr. Anil Talwar</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-anita-talwar.jpg" alt="Dr. Anita Talwar, Senior Gynaecologist" loading="lazy" decoding="async" /><span>Dr. Anita Talwar</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-mahender-singh.jpg" alt="Dr. Mahender Singh, Senior Paediatrician" loading="lazy" decoding="async" /><span>Dr. Mahender Singh</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-pawan-gupta.jpg" alt="Dr. Pawan Gupta, Senior Oncologist" loading="lazy" decoding="async" /><span>Dr. Pawan Gupta</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-sukhjinder-chawla.jpg" alt="Dr. Sukhjinder Chawla, Senior Radiologist" loading="lazy" decoding="async" /><span>Dr. Sukhjinder Chawla</span></Link>
+            <Link className="adv-face" href="/advisors/"><img src="/images/advisor-sunil-bhutani.jpg" alt="Dr. Sunil Bhutani, Senior Paediatrician" loading="lazy" decoding="async" /><span>Dr. Sunil Bhutani</span></Link></div></div></section>
       <section className="sec tight trust" id="a-trust">
         <div className="wrap">
           <div className="head2 rt">

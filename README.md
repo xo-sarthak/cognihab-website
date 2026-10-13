@@ -17,6 +17,7 @@ Open http://localhost:3000.
 | `npm run dev` | Local development server with hot reload. |
 | `npm run build` | Static export of all 20 pages to `out/`, plus `sitemap.xml` and `robots.txt`. |
 | `npm start` | Serves `out/` locally to check the production build. |
+| `npm run check:layout` | After a build: loads every page at five widths in your installed Chrome and fails on overlapping text or horizontal scroll. |
 
 ## Layout
 

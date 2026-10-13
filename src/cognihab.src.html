@@ -311,6 +311,9 @@ body.menu-open .burger span{background:#fff}
 /* ---------- closing cta ---------- */
 .close{padding:20vh 0 16vh;position:relative;overflow:hidden}
 .close .wrap{text-align:center;display:grid;justify-items:center}
+.talk{margin-top:1.6rem;color:var(--mute,#5b6b70);font-size:.95rem}
+.talk a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+.faq .a a{color:var(--royal);text-decoration:underline;text-underline-offset:2px}
 .close h2{font-size:clamp(2.8rem,8vw,7.6rem);color:var(--navy);max-width:12ch}
 .close p{margin:1.4rem 0 2.2rem;max-width:44ch;text-align:center}
 .close .acts{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center}
@@ -791,6 +794,7 @@ h2{text-wrap:balance}
 .plate .back h4:first-of-type{margin-top:0}
 .plate .back p{font-size:.88rem;color:#2A4249;line-height:1.45}
 .plate .back .chips{display:flex;flex-wrap:wrap;gap:.35rem}
+.plate .back .chips a{font-size:.78rem;padding:.25rem .55rem;border-radius:8px;background:var(--paper);border:1px solid var(--leaf);color:var(--navy);text-decoration:underline;text-decoration-color:rgba(14,69,83,.3);text-underline-offset:2px}
 .plate .back .chips span{font-size:.78rem;padding:.25rem .55rem;border-radius:8px;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
 .plate .back .std{font-size:.76rem;color:var(--mute);border-left:2px solid var(--line);padding-left:.7rem;margin-top:.8rem}
 .plate .back .prow{margin-top:1rem}
@@ -862,6 +866,8 @@ h2{text-wrap:balance}
 .grids h3{font-size:1.05rem;color:var(--navy);margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
 .grids h3 span{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--mute);font-weight:400}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips a{padding:.5rem .8rem;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:.9rem;color:var(--ink);transition:transform .4s var(--ease),border-color .3s}
+.chips a:hover{transform:translateY(-2px);border-color:var(--leaf);color:var(--navy)}
 .chips span{padding:.5rem .8rem;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:.9rem;color:var(--ink);transition:transform .4s var(--ease),border-color .3s}
 .chips span:hover{transform:translateY(-2px);border-color:var(--leaf)}
 .chips.v span:hover{border-color:var(--blue)}
@@ -1057,11 +1063,11 @@ h2{text-wrap:balance}
       </div>
       <div class="copy">
         <div class="eb hl0">Rehabilitation &#183; Vision care &#183; Well-being</div>
-        <h1 class="hl0">Digital Therapeutics you can <em>measure.</em></h1>
-        <p class="lead hl0">CogniHab is a digital therapeutics platform delivered through virtual reality, for hospitals, clinics, employers, public health programmes, fitness centres and people at home. Each person trains inside guided immersive sessions, the system scores every movement, and the report is ready at the end.</p>
+        <h1 class="hl0">VR healthcare solutions you can <em>measure.</em></h1>
+        <p class="lead hl0">CogniHab brings VR healthcare solutions to hospitals, clinics, employers, public health programmes, fitness centres and people at home: VR rehabilitation, vision therapy and guided well-being on one headset. CogniHab is a digital therapeutics platform delivered through virtual reality. Each person trains inside guided immersive sessions, the system scores every movement, and the report is ready at the end.</p>
         <div class="acts hl0">
-          <a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
-          <a class="btn o" href="/#walkthrough">See what it does</a>
+          <a class="btn p" href="/contact/">Book a demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn o" href="#walkthrough">See what it does</a>
         </div>
         <div class="reads" id="reads" aria-hidden="true">
         <div data-at=".06"><span>Posture scan</span><b>4 views</b><i></i></div>
@@ -1088,7 +1094,7 @@ h2{text-wrap:balance}
     <div class="wrap">
       <div class="rt">
         <div class="eb">The equipment</div>
-        <h2>A headset, a phone, and three programmes running on them.</h2>
+        <h2>The VR therapy kit: a headset, a phone, and three programmes running on them.</h2>
         <p>One Meta Quest headset carries all three CogniHab programmes. Rehabilitation adds an ordinary mobile phone on a stand so the camera can see the whole body. There is no other equipment to buy and nothing to install in the room.</p>
         <div class="cnt">
           <div><b>34</b><span>Rehabilitation tasks</span></div>
@@ -1115,7 +1121,7 @@ h2{text-wrap:balance}
   <section class="sec walk" id="walkthrough">
     <div class="wrap">
       <div class="head2 rt">
-        <div><div class="eb">Watch</div><h2>Know more about CogniHab.</h2></div>
+        <div><div class="eb">Watch</div><h2>Watch how VR therapy works at CogniHab.</h2></div>
         <p>A short film on what immersive therapy changes for vision care, stroke rehabilitation and everyday well-being &#8212; who it is for, and why recovery goes faster when treatment is something people want to do.</p>
       </div>
       <div class="player rt" id="player">
@@ -1123,12 +1129,20 @@ h2{text-wrap:balance}
         <button class="playbtn" id="playBtn" type="button" aria-label="Play the film"><span class="pb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="pl">Play the film</span><span class="pd">3 min 35 s &#183; with sound</span></button>
       </div>
       <div class="walk-row rt">
-        <a class="lnk" href="/contact/">Request a live demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="lnk" href="/contact/">Book a live demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
       </div>
     </div>
   </section>
 
   <!-- H3 chapters -->
+  <section class="sec tight progs" id="programmes">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb">Programmes</div><h2>Three VR therapy programmes on one platform.</h2></div>
+        <p>VR rehabilitation, VR vision therapy and VR well-being, each with its own scans, sessions and reports.</p>
+      </div>
+    </div>
+  </section>
   <section class="ch" id="p-body">
     <div class="bg">
       <picture>
@@ -1144,9 +1158,9 @@ h2{text-wrap:balance}
         <div class="cap"><b>What the clinician sees</b>Live skeleton tracking, joint angles and a score for every repetition.</div>
         <div class="plate rt" id="plate-body">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="/rehabilitation/">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/rehabilitation/">Explore VR rehabilitation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb g">Programme · Rehabilitation</div>
-              <h3>Movement, measured.</h3>
+              <h3>VR rehabilitation: Movement, measured.</h3>
               <ul>
                 <li>Gamified tasks for upper-body rehabilitation after stroke, spinal cord injury, head injury and cerebral palsy.</li>
                 <li>An AI coach with over 1,000 exercises, form-checked by a phone camera.</li>
@@ -1155,11 +1169,11 @@ h2{text-wrap:balance}
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset + phone camera · or phone only</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-body">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="/rehabilitation/">Open the rehabilitation page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/rehabilitation/">Explore VR rehabilitation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>What it does</h4>
               <p>A posture scan and a joint movement scan set the patient's baseline in a few minutes. From there the patient works through therapy tasks in the headset, or follows a coach through exercises while the phone camera checks their form on every repetition. Everything is scored, so progress shows up as numbers rather than impressions.</p>
               <h4>What it is used for</h4>
-              <div class="chips"><span>Stroke recovery</span><span>Spinal cord injury</span><span>Head injury</span><span>Cerebral palsy</span><span>Orthopaedic and post-surgical recovery</span><span>Sports injury</span><span>Age-related weakness and falls</span><span>Postural strain from desk work</span><span>Day-to-day fitness</span></div>
+              <div class="chips"><a href="/rehabilitation/stroke-neurological-rehabilitation/">Stroke recovery</a><a href="/rehabilitation/spinal-injury-rehabilitation/">Spinal cord injury</a><a href="/rehabilitation/stroke-neurological-rehabilitation/">Head injury</a><a href="/rehabilitation/stroke-neurological-rehabilitation/">Cerebral palsy</a><a href="/rehabilitation/orthopaedic-post-surgical-recovery/">Orthopaedic and post-surgical recovery</a><a href="/rehabilitation/sports-rehabilitation-fitness/">Sports injury</a><a href="/rehabilitation/sports-rehabilitation-fitness/">Day-to-day fitness</a><a href="/rehabilitation/senior-care-fall-prevention/">Age-related weakness and falls</a><a href="/well-being/workplace-wellbeing/">Postural strain from desk work</a><a href="/rehabilitation/sports-rehabilitation-fitness/">Day-to-day fitness</a></div>
               <h4>Where it is used</h4>
               <div class="chips"><span>Hospital rehabilitation units</span><span>Physiotherapy and occupational therapy departments</span><span>Sports clinics</span><span>Senior care homes</span><span>Corporate offices</span><span>Fitness centres</span><span>Home programmes supervised from the clinic</span></div>
               <div class="prow"><button class="flipbtn" data-flip="plate-body">Back</button></div>
@@ -1185,24 +1199,24 @@ h2{text-wrap:balance}
         <div class="cap"><b>Screening, not diagnosis</b>Anyone flagged is referred to an ophthalmologist.</div>
         <div class="plate v rt" id="plate-vision">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="/vision/">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/vision/">Explore VR vision therapy <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb">Programme · Vision care</div>
-              <h3>Eye care a child will sit still for.</h3>
+              <h3>VR vision therapy and screening: Eye care a child will sit still for.</h3>
               <ul>
-                <li>An immersive therapy for lazy eye, delivered as a structured programme of short sessions.</li>
+                <li>An immersive therapy for lazy eye (amblyopia), delivered as a structured programme of short sessions.</li>
                 <li>Guided vision screening: several tests, one after another, in under ten minutes, with a detailed report at the end.</li>
                 <li>Built for eye clinics, schools, workplaces and community programmes.</li>
               </ul>
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset in clinic · goggles at home for lazy eye</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-vision">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="/vision/">Open the vision page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/vision/">Explore VR vision therapy <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>Lazy eye therapy</h4>
               <p>Each eye is shown a different part of the same scene, so the game can only be completed if the weaker eye is doing its share of the work. The child plays, and the therapy happens while they play. Sessions run about fifteen minutes and the clinic can see whether they are being completed between visits.</p>
               <h4>Vision screening</h4>
               <p>The tests run one after another inside the headset, in under ten minutes, and a detailed report is presented at the end. Each result is either clear or a referral to an ophthalmologist.</p>
               <h4>What it is used for</h4>
-              <div class="chips"><span>Amblyopia, commonly called lazy eye</span><span>Undetected vision problems in children and adults</span></div>
+              <div class="chips"><a href="/vision/lazy-eye-therapy/">Amblyopia, commonly called lazy eye</a><a href="/vision/vision-screening/">Undetected vision problems in children and adults</a></div>
               <h4>Where it is used</h4>
               <div class="chips"><span>Eye clinics</span><span>Paediatric departments</span><span>Optometry practices</span><span>Schools</span><span>Community screening days</span><span>Primary care networks</span><span>Corporate offices</span></div>
               <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
@@ -1229,9 +1243,9 @@ h2{text-wrap:balance}
         <div class="cap"><b>Eleven guided journeys</b>Breathing, humming and voice, no prior experience needed.</div>
         <div class="plate m rt" id="plate-mind">
           <div class="inner">
-            <div class="face front"><a class="lnk plink" href="/well-being/">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face front"><a class="lnk plink" href="/well-being/">Explore VR well-being programmes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <div class="eb" style="color:var(--royal)">Programme · Well-being</div>
-              <h3>A quieter room, anywhere.</h3>
+              <h3>VR meditation and well-being: A quieter room, anywhere.</h3>
               <ul>
                 <li>Eleven guided journeys built on breathing, humming and voice.</li>
                 <li>Eight to ten minutes each, taken sitting down, with no experience needed.</li>
@@ -1240,11 +1254,11 @@ h2{text-wrap:balance}
               <div class="eqtag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-3l-3-3-3 3H6a3 3 0 0 1-3-3Z"/></svg>Headset + headphones · or mobile VR goggles + phone</div>
               <div class="prow"><button class="flipbtn" data-flip="plate-mind">See more details</button></div>
             </div>
-            <div class="face back"><a class="lnk plink" href="/well-being/">Open the well-being page <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <div class="face back"><a class="lnk plink" href="/well-being/">Explore VR well-being programmes <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
               <h4>What it does</h4>
               <p>The person puts on the headset and is taken through a natural scene while a voice guides their breathing. Some journeys use humming or the voice itself to settle the body. They sit throughout, and nothing is asked of them beyond following along.</p>
               <h4>What it is used for</h4>
-              <div class="chips"><span>Day-to-day mindfulness</span><span>Stress at work</span><span>Settling patients before or between procedures</span><span>Quiet time in senior care</span></div>
+              <div class="chips"><a href="/well-being/at-home/">Day-to-day mindfulness</a><a href="/well-being/workplace-wellbeing/">Stress at work</a><a href="/well-being/care-settings/">Settling patients before or between procedures</a><a href="/well-being/care-settings/">Quiet time in senior care</a></div>
               <h4>Where it is used</h4>
               <div class="chips"><span>Employers and workplace health programmes</span><span>Hospitals and clinics</span><span>Senior care homes</span><span>At home</span></div>
               <div class="prow"><button class="flipbtn" data-flip="plate-mind">Back</button></div>
@@ -1545,18 +1559,18 @@ h2{text-wrap:balance}
     <div class="wrap">
       <div class="head rt">
         <div><div class="eb">Who it is for</div><h2>Built for the places people go to get better.</h2></div>
-        <p class="lead">Nine kinds of buyer, one platform. The dots show which programmes apply to each.</p>
+        <p class="lead">Nine kinds of buyer, one platform. Virtual reality therapy for hospitals, clinics, employers, schools, care homes and homes. The dots show which programmes apply to each.</p>
       </div>
       <div class="list rt" id="whoList">
-        <div class="row2"><span class="k">Hospitals</span><span class="t">Hospitals and health systems</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></div>
-        <div class="row2"><span class="k">Rehab</span><span class="t">Rehabilitation and physiotherapy centres</span><span class="s"><span class="dots"><i class="b"></i><i></i><i></i></span></span></div>
-        <div class="row2"><span class="k">Eye care</span><span class="t">Eye clinics</span><span class="s"><span class="dots"><i></i><i class="v"></i><i></i></span></span></div>
-        <div class="row2"><span class="k">Employers</span><span class="t">Employers and corporate offices</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></div>
-        <div class="row2"><span class="k">Senior care</span><span class="t">Senior care and geriatric services</span><span class="s"><span class="dots"><i class="b"></i><i></i><i class="m"></i></span></span></div>
-        <div class="row2"><span class="k">Government</span><span class="t">Government health programmes</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i></i></span></span></div>
-        <div class="row2"><span class="k">Fitness</span><span class="t">Fitness centres and coaches</span><span class="s"><span class="dots"><i class="b"></i><i></i><i class="m"></i></span></span></div>
-        <div class="row2"><span class="k">Schools</span><span class="t">Schools and school networks</span><span class="s"><span class="dots"><i></i><i class="v"></i><i></i></span></span></div>
-        <div class="row2"><span class="k">Home</span><span class="t">Individuals at home</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></div>
+        <a class="row2" href="/rehabilitation/"><span class="k">Hospitals</span><span class="t">Hospitals and health systems</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></a>
+        <a class="row2" href="/rehabilitation/"><span class="k">Rehab</span><span class="t">Rehabilitation and physiotherapy centres</span><span class="s"><span class="dots"><i class="b"></i><i></i><i></i></span></span></a>
+        <a class="row2" href="/vision/lazy-eye-therapy/"><span class="k">Eye care</span><span class="t">Eye clinics</span><span class="s"><span class="dots"><i></i><i class="v"></i><i></i></span></span></a>
+        <a class="row2" href="/well-being/workplace-wellbeing/"><span class="k">Employers</span><span class="t">Employers and corporate offices</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></a>
+        <a class="row2" href="/rehabilitation/senior-care-fall-prevention/"><span class="k">Senior care</span><span class="t">Senior care and geriatric services</span><span class="s"><span class="dots"><i class="b"></i><i></i><i class="m"></i></span></span></a>
+        <a class="row2" href="/vision/school-community-screening/"><span class="k">Government</span><span class="t">Government health programmes</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i></i></span></span></a>
+        <a class="row2" href="/rehabilitation/sports-rehabilitation-fitness/"><span class="k">Fitness</span><span class="t">Fitness centres and coaches</span><span class="s"><span class="dots"><i class="b"></i><i></i><i class="m"></i></span></span></a>
+        <a class="row2" href="/vision/school-community-screening/"><span class="k">Schools</span><span class="t">Schools and school networks</span><span class="s"><span class="dots"><i></i><i class="v"></i><i></i></span></span></a>
+        <a class="row2" href="/well-being/at-home/"><span class="k">Home</span><span class="t">Individuals at home</span><span class="s"><span class="dots"><i class="b"></i><i class="v"></i><i class="m"></i></span></span></a>
       </div>
       <div class="legend"><span><i class="dots"><i class="b"></i></i>Rehabilitation</span><span><i class="dots"><i class="v"></i></i>Vision</span><span><i class="dots"><i class="m"></i></i>Well-being</span></div>
     </div>
@@ -1611,6 +1625,9 @@ h2{text-wrap:balance}
         <p>Every hospital, care home, employer and programme lead asks these in the first meeting. Here they are before the meeting.</p>
       </div>
       <div class="list rt" id="faqList">
+        <div class="q"><button aria-expanded="false">Which conditions does CogniHab support?<i></i></button><div class="a"><p>Rehabilitation after stroke, head injury, cerebral palsy, spinal cord injury, orthopaedic surgery and sports injury, plus balance and fall prevention for older adults; lazy eye (amblyopia) therapy and vision screening; and guided well-being for stress. Each has its own page: see <a href="/rehabilitation/">Rehabilitation</a>, <a href="/vision/">Vision</a> and <a href="/well-being/">Well-being</a>.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can patients continue therapy at home?<i></i></button><div class="a"><p>Yes. The scans and the coached exercise library run on a phone alone, and lazy eye therapy and the well-being journeys run on lightweight mobile VR goggles. The clinic can see what was completed between visits.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is VR therapy safe?<i></i></button><div class="a"><p>Sessions are short, seated or standing on clear floor, voice-guided and supervised by the clinic. Vision screening indicates when to see an ophthalmologist; it is not a diagnosis. Read more in our guide: <a href="/blog/is-vr-therapy-safe-everything-you-need-to-know-before-starting/">Is VR therapy safe?</a></p></div></div>
         <div class="q"><button aria-expanded="false">How much space do we need?<i></i></button><div class="a"><p>The headset programmes need a chair, or about two square metres of clear floor for standing tasks. The camera-based programmes need the phone on a stand about two metres from the person, with their whole body in frame and the floor between them clear.</p></div></div>
         <div class="q"><button aria-expanded="false">Does it need an internet connection?<i></i></button><div class="a"><p>Yes. An internet connection is required during sessions, so that results and reports reach the right account and the clinician can see what was completed.</p></div></div>
         <div class="q"><button aria-expanded="false">How many people can one headset serve in a day?<i></i></button><div class="a"><p>There is no fixed limit on the headset itself. A posture scan takes under two minutes, a vision screening under ten, a well-being journey eight to ten, and a lazy eye session about fifteen. The headset is wiped between people and handed on.</p></div></div>
@@ -1633,15 +1650,15 @@ h2{text-wrap:balance}
       </div>
       <div class="bgrid rt">
         <a class="bcard" href="/blog/workplace-back-neck-pain/">
-          <div class="im"><img src="{{IMG:blog-1.jpg}}" alt=""></div>
+          <div class="im"><img src="{{IMG:blog-1.jpg}}" alt="The hidden cost of back and neck pain in employees"></div>
           <div class="bd"><div class="eb">Corporate well-being</div><h3>The hidden cost of back and neck pain in employees</h3><p>What smart companies are doing about the strain that builds quietly at a desk.</p></div>
         </a>
         <a class="bcard" href="/blog/is-vr-therapy-safe-everything-you-need-to-know-before-starting/">
-          <div class="im"><img src="{{IMG:blog-2.jpg}}" alt=""></div>
+          <div class="im"><img src="{{IMG:blog-2.jpg}}" alt="Is VR therapy safe?"></div>
           <div class="bd"><div class="eb">Foundations</div><h3>Is VR therapy safe?</h3><p>Everything worth knowing before a first session, for clinicians and for patients.</p></div>
         </a>
         <a class="bcard" href="/blog/vr-ai-orthopaedic-rehabilitation/">
-          <div class="im"><img src="{{IMG:blog-3.jpg}}" alt=""></div>
+          <div class="im"><img src="{{IMG:blog-3.jpg}}" alt="VR and AI for orthopaedic rehabilitation"></div>
           <div class="bd"><div class="eb">Rehabilitation</div><h3>VR and AI for orthopaedic rehabilitation</h3><p>A complete guide for physiotherapists, clinics and corporate programmes.</p></div>
         </a>
       </div>
@@ -1657,9 +1674,10 @@ h2{text-wrap:balance}
       <h2>See it on a headset.</h2>
       <p class="lead">A demo takes thirty minutes, in person or online. Bring a clinician, a therapist or a programme lead, and we will show the programme that fits your setting.</p>
       <div class="acts">
-        <a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
-        <a class="btn o" href="/rehabilitation/">Browse the programmes</a>
+        <a class="btn p" href="/contact/">Book a 30-minute demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="btn o" href="#programmes">Browse the programmes</a>
       </div>
+      <p class="talk">Prefer to talk now? <a href="https://wa.me/917426060606" target="_blank" rel="noopener">WhatsApp</a> or call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p>
     </div>
   </section>
 </main>

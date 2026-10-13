@@ -730,6 +730,27 @@ body.has-ann .ch .chip,body.has-ann .ch .big{margin-top:40px}
 .head2 p{color:var(--mute);max-width:44ch;font-size:clamp(1rem,1.3vw,1.18rem)}
 .head2 .eb{margin-bottom:.9rem}
 h1.as-h2{font-size:clamp(2.1rem,4.6vw,3.9rem);color:var(--navy)}
+.wgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:4vw;align-items:start}
+.whatis p{font-size:1.08rem;line-height:1.65;max-width:60ch;margin-top:1rem}
+.facts{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.5rem 1.7rem}
+.facts .ft{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--royal);font-weight:600}
+.facts ul{list-style:none;margin-top:.6rem}
+.facts li{padding:.62rem 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.facts li:last-child{border-bottom:0}
+.facts b{font-family:var(--disp);color:var(--navy);font-weight:700}
+.whyg{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.whyc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.4rem 1.4rem 1.5rem}
+.whyc h3{font-size:1.2rem;color:var(--navy);letter-spacing:-.02em;line-height:1.15;margin-bottom:.6rem}
+.whyc p{font-size:.95rem;line-height:1.55}
+.fcb .ucmore{margin-top:.9rem;display:inline-flex}
+.pg .shortcuts{margin-top:1.3rem;font-size:.92rem;color:rgba(255,255,255,.86)}
+.pg .shortcuts a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.pcta-acts{display:grid;gap:.6rem;justify-items:stretch}
+.pillar-cta .btn.o{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55);justify-content:center}
+.pillar-cta .talk,.pillar-cta .also{color:rgba(255,255,255,.78);font-size:.92rem}
+.pillar-cta .talk a,.pillar-cta .also a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:980px){.whyg{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.wgrid{grid-template-columns:1fr}.whyg{grid-template-columns:1fr}.pillar-cta .wrap{grid-template-columns:1fr}}
 h2{text-wrap:balance}
 
 /* equipment block */
@@ -1687,18 +1708,42 @@ h2{text-wrap:balance}
   <section class="pg">
     <div class="pghero"><img class="pgimg" data-src="body" alt="A patient in a VR headset mid-session while a clinician watches the skeleton tracking view"><div class="scrim"></div></div>
     <div class="wrap"><div class="rt">
-        <div class="eb">Rehabilitation</div>
-        <h1>Rehabilitation that scores itself.</h1>
-        <p class="lead">Two scans that set a baseline in minutes. Thirty-four gamified tasks for the upper body and everyday actions. An exercise library of more than a thousand movements with a coach on screen and a camera checking the form. One report at the end of every session.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/rehabilitation/#tasks">See the tasks</a></div>
+        <!--CRUMBS-->
+        <div class="eb">VR rehabilitation</div>
+        <h1>VR rehabilitation that scores itself.</h1>
+        <p class="lead">CogniHab is a virtual reality rehabilitation system for hospitals, physiotherapy clinics, care homes, sports clinics and home programmes. Two scans that set a baseline in minutes. Thirty-four gamified tasks for the upper body and everyday actions. An exercise library of more than a thousand movements with a coach on screen and a camera checking the form. One report at the end of every session.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=rehabilitation">Book a rehabilitation demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="#tasks">See the tasks</a></div>
       </div></div>
+  </section>
+
+  <section class="sec tight whatis" id="r-what">
+    <div class="wrap wgrid">
+      <div class="rt"><div class="eb g">Overview</div><h2>What is VR rehabilitation?</h2><p>VR rehabilitation uses a virtual reality headset to turn physiotherapy and occupational therapy exercises into guided, game-like tasks. Sensors track each movement, so the system can score it and report progress. CogniHab adds phone-camera scans and an AI-coached exercise library, so therapy can continue at home without the headset.</p></div>
+      <aside class="facts rt" aria-label="At a glance"><div class="ft">At a glance</div><ul><li><b>34</b> Rehabilitation tasks</li><li><b>1,000+</b> Coached exercises</li><li><b>4</b> Posture scan views</li><li><b>48</b> Joint movements measured</li><li><b>Meta Quest or phone</b></li><li><b>Session &amp; programme reports</b></li><li><b>Built in Jaipur, India</b></li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec" id="r-cases">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb g">Use cases</div><h2>VR Rehabilitation Use Cases</h2></div>
+        <p>CogniHab provides <strong>VR rehabilitation</strong> for different conditions, recovery goals and care settings. The <strong>virtual reality rehabilitation system</strong> combines interactive rehabilitation tasks, guided exercises, movement assessments and progress tracking to support structured rehabilitation programmes.</p>
+      </div>
+      <div class="ucards rt">
+        <article class="uc fc" id="uc-stroke-neurological-rehabilitation"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-stroke.jpg}}" alt="An older man in a VR headset raises his bare hands at a table while an occupational therapist watches"></div><div class="fcap"><h3>Stroke &amp; Neurological Rehabilitation</h3><p>Relearning grip, reach and everyday actions.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Stroke &amp; Neurological Rehabilitation</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Patients work through interactive tasks using controllers or bare hands. Tasks include holding a spoon, drinking water, brushing teeth, opening a drawer and other everyday actions. Each task is scored automatically.</p><h4>What it addresses</h4><p>Stroke rehabilitation &#183; Head injury recovery &#183; Cerebral palsy rehabilitation &#183; Upper limb rehabilitation &#183; Grip and reach training &#183; Activities of daily living</p><h4>Who buys it</h4><p>Hospitals, neurological rehabilitation units and occupational therapy departments.</p><h4>What is needed</h4><p>Meta Quest headset with controllers or bare-hand tracking. No phone is required for this use case.</p><a class="lnk ucmore" href="/rehabilitation/stroke-neurological-rehabilitation/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc fc" id="uc-orthopaedic-post-surgical-recovery"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-ortho.jpg}}" alt="A young woman with a knee brace does a mini-squat holding a chair, facing a phone on a tripod"></div><div class="fcap"><h3>Orthopaedic &amp; Post-Surgical Rehabilitation</h3><p>Guided exercises with measurable movement and form tracking.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Orthopaedic &amp; Post-Surgical Rehabilitation</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>A baseline assessment can be used to build a rehabilitation programme. The phone camera checks exercise form during repetitions, while repeat assessments help show changes in movement over time.</p><h4>What it addresses</h4><p>Post-surgical rehabilitation &#183; Joint stiffness &#183; Reduced range of motion &#183; Strength and mobility &#183; Guided physiotherapy exercises</p><h4>Who buys it</h4><p>Orthopaedic hospitals, physiotherapy centres and surgeons&#8217; clinics.</p><h4>What is needed</h4><p>Meta Quest headset with a phone, or phone alone for scans and exercises.</p><a class="lnk ucmore" href="/rehabilitation/orthopaedic-post-surgical-recovery/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc fc" id="uc-spinal-injury-rehabilitation"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-spinal.jpg}}" alt="A man in a wheelchair wearing a VR headset raises both arms while a therapist stands behind him"></div><div class="fcap"><h3>Spinal Cord Injury Rehabilitation</h3><p>Structured rehabilitation for different levels of mobility.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Spinal Cord Injury Rehabilitation</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Patients work through exercises selected for their movement ability. Programmes can include assisted and passive exercises, seated activities, core and spine work, and separate left- and right-side movements. Activity is recorded and scored during the session.</p><h4>What it addresses</h4><p>Spinal cord injury rehabilitation &#183; Limited mobility &#183; Assisted exercises &#183; Passive exercises &#183; Core and spine movement &#183; Asymmetric movement</p><h4>Who buys it</h4><p>Spinal injury units and long-term rehabilitation centres.</p><h4>What is needed</h4><p>Meta Quest headset with a phone. Many exercises can be performed in a seated position.</p><a class="lnk ucmore" href="/rehabilitation/spinal-injury-rehabilitation/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc fc" id="uc-senior-care-fall-prevention"><div class="fcin"><div class="fcf"><div class="im hi"><img src="{{IMG:rehab-uc-senior.jpg}}" alt="An elderly woman holds the back of a chair for a heel raise in a care home lounge while a care assistant watches"></div><div class="fcap"><h3>Senior Care &amp; Fall Prevention</h3><p>Guided rehabilitation for balance, strength and mobility.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Senior Care &amp; Fall Prevention</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Patients can complete guided exercises using a phone camera alone or a headset and phone. Posture scans help track changes in physical function over time.</p><h4>What it addresses</h4><p>Age-related weakness &#183; Balance and mobility &#183; Fall prevention &#183; Strength and conditioning &#183; Body awareness</p><h4>Who buys it</h4><p>Senior care homes, geriatric clinics and home care providers.</p><h4>What is needed</h4><p>Phone alone or Meta Quest headset with a phone.</p><a class="lnk ucmore" href="/rehabilitation/senior-care-fall-prevention/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc fc" id="uc-sports-rehabilitation-fitness"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-sports.jpg}}" alt="A young athlete balances on one leg facing a phone on a tripod while a physiotherapist takes notes"></div><div class="fcap"><h3>Sports Rehabilitation &amp; Fitness</h3><p>Measured movement, guided exercises and structured recovery.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Sports Rehabilitation &amp; Fitness</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Joint movements can be measured at intervals, while guided exercises support strength, mobility and movement training. The camera can check exercise form during repetitions.</p><h4>What it addresses</h4><p>Sports injury rehabilitation &#183; Range of motion assessment &#183; Strength and mobility &#183; Movement assessment &#183; Return-to-activity programmes &#183; Day-to-day fitness</p><h4>Who buys it</h4><p>Sports clinics, academies, physiotherapists, fitness centres and individuals at home.</p><h4>What is needed</h4><p>Meta Quest headset with a phone, or phone alone for scans and exercises.</p><a class="lnk ucmore" href="/rehabilitation/sports-rehabilitation-fitness/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+      </div>
+    </div>
   </section>
 
   <section class="sec tight" id="r-ways">
     <div class="wrap split">
       <div class="side rt">
         <div class="eb g">Delivery</div>
-        <h2>Two ways to run it.</h2>
+        <h2>Two ways to run it: in a VR headset or on a phone.</h2>
         <p>The full programme lives in the headset. The scans and the exercise library also run from a phone alone, which takes the headset out of the price entirely.</p>
       </div>
       <div class="ways rt">
@@ -1711,7 +1756,7 @@ h2{text-wrap:balance}
   <section class="sec" id="tasks">
     <div class="wrap">
       <div class="head2 rt">
-        <div><div class="eb g">The tasks</div><h2>Thirty-four tasks. Played with the controllers, or with bare hands.</h2></div>
+        <div><div class="eb g">The tasks</div><h2>Thirty-four gamified rehabilitation tasks. Played with the controllers, or with bare hands.</h2></div>
         <p>Built for upper-body rehabilitation after stroke, spinal cord injury, head injury and cerebral palsy. A patient who cannot hold a controller uses bare-hand tracking instead.</p>
       </div>
       <div class="strip rt">
@@ -1842,25 +1887,16 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="sec" id="r-cases">
+  <section class="sec tight why" id="r-why">
     <div class="wrap">
-      <div class="head2 rt">
-        <div><div class="eb g">Use cases</div><h2>Five settings, one programme.</h2></div>
-        <p>The condition and the setting kept separate, and what each one needs in the room.</p>
-      </div>
-      <div class="ucards rt">
-        <article class="uc fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-stroke.jpg}}" alt="An older man in a VR headset raises his bare hands at a table while an occupational therapist watches"></div><div class="fcap"><h3>Stroke and neurological rehabilitation</h3><p>Relearning grip, reach and the actions of an ordinary day.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Stroke and neurological rehabilitation</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The patient works through the gamified tasks using the controllers or bare hands. Some train reaching and grip directly. Others rebuild everyday actions: holding a spoon, drinking water, brushing teeth, opening a drawer, switching on a light. Each task is scored, so the therapist sees function returning rather than judging it by eye.</p><h4>What it addresses</h4><p>Stroke. Head injury. Cerebral palsy. Loss of fine motor control and difficulty with everyday actions after a neurological event.</p><h4>Who buys it</h4><p>Hospitals, neurological rehabilitation units, occupational therapy departments.</p><h4>What is needed</h4><p>Meta Quest headset only. Controllers or bare hands. No phone needed for this one.</p></div></div></article>
-        <article class="uc fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-ortho.jpg}}" alt="A young woman with a knee brace does a mini-squat holding a chair, facing a phone on a tripod"></div><div class="fcap"><h3>Orthopaedic and post-surgical recovery</h3><p>An exercise programme that watches whether it is being done properly.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Orthopaedic and post-surgical recovery</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>A baseline scan before surgery or at the first visit, a programme built from it, and the camera checking form on every repetition after that. The same scan repeated later shows exactly how much movement has come back.</p><h4>What it addresses</h4><p>Recovery before and after orthopaedic surgery. Joint stiffness and lost range of movement. General strengthening.</p><h4>Who buys it</h4><p>Orthopaedic hospitals, physiotherapy centres, surgeons' clinics.</p><h4>What is needed</h4><p>Headset and phone camera, or the phone alone.</p></div></div></article>
-        <article class="uc fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-spinal.jpg}}" alt="A man in a wheelchair wearing a VR headset raises both arms while a therapist stands behind him"></div><div class="fcap"><h3>Spinal injury</h3><p>Programmes that meet the patient where their movement currently is.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Spinal injury</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Assisted and passive exercises for patients with very limited movement, core and spine work, and left and right versions of every movement so one side can be worked without the other. The patient sets the pace and the system scores what they manage.</p><h4>What it addresses</h4><p>Spinal cord injury. Severely limited mobility. Asymmetric loss of movement.</p><h4>Who buys it</h4><p>Spinal units, long-term rehabilitation centres.</p><h4>What is needed</h4><p>Headset and phone camera. Most of it can be done seated.</p></div></div></article>
-        <article class="uc fc"><div class="fcin"><div class="fcf"><div class="im hi"><img src="{{IMG:rehab-uc-senior.jpg}}" alt="An elderly woman holds the back of a chair for a heel raise in a care home lounge while a care assistant watches"></div><div class="fcap"><h3>Senior care and fall prevention</h3><p>Balance and strength work a care home can run without a physiotherapist on site.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Senior care and fall prevention</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Gentle balance, strength and body-awareness exercises coached on screen and scored by the camera, with posture scans that make month-to-month change visible to staff and families. Voice guidance throughout, so a care assistant can run a session.</p><h4>What it addresses</h4><p>Age-related weakness. Poor balance and fall risk. Loss of mobility.</p><h4>Who buys it</h4><p>Senior care homes, geriatric clinics, home care providers.</p><h4>What is needed</h4><p>Phone camera alone, or headset and phone.</p></div></div></article>
-        <article class="uc fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:rehab-uc-sports.jpg}}" alt="A young athlete balances on one leg facing a phone on a tripod while a physiotherapist takes notes"></div><div class="fcap"><h3>Sports rehabilitation and fitness</h3><p>Return-to-play decisions backed by a number.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Sports rehabilitation and fitness</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Strength, mobility and higher-intensity programmes with joint movement scans taken at intervals, so a return-to-play decision rests on measured range and form rather than on how the athlete says they feel. The same library runs day-to-day fitness programmes for a gym floor or a living room.</p><h4>What it addresses</h4><p>Sports injury recovery. Strength and mobility deficits. Return-to-play assessment. Day-to-day fitness.</p><h4>Who buys it</h4><p>Sports clinics, academies, team physiotherapists, fitness centres, individuals at home.</p><h4>What is needed</h4><p>Headset and phone camera, or the phone alone.</p></div></div></article>
-      </div>
+      <div class="head2 rt"><div><div class="eb g">Why VR rehabilitation</div><h2>Why clinics choose VR rehabilitation</h2></div></div>
+      <div class="whyg rt"><div class="whyc"><h3>Patients finish what they start</h3><p>Therapy is a game, and every task is built to be completed.</p></div><div class="whyc"><h3>Progress is measured, not judged</h3><p>Every repetition and task is scored, and scans are in degrees.</p></div><div class="whyc"><h3>Therapy continues at home</h3><p>The scans and exercise library run on a phone alone, and the clinic sees what was done.</p></div><div class="whyc"><h3>Less specialist time per session</h3><p>Voice guidance means a trained assistant can run sessions the clinician has prescribed.</p></div></div>
     </div>
   </section>
 
   <section class="sec tight" id="r-equipment">
     <div class="wrap">
-      <div class="head2 rt"><div><div class="eb g">What the buyer needs</div><h2>The equipment, line by line.</h2></div><p>Everything a clinic, care home, gym or household has to have in the room for each part of the programme.</p></div>
+      <div class="head2 rt"><div><div class="eb g">What the buyer needs</div><h2>The equipment for VR rehabilitation</h2></div><p>Everything a clinic, care home, gym or household has to have in the room for each part of the programme.</p></div>
       <div class="tblwrap rt"><table class="eqt"><thead><tr><th>Programme</th><th>What the buyer needs</th></tr></thead><tbody>
         <tr><td>Gamified tasks</td><td>Meta Quest headset only. Controllers or bare hands.</td></tr>
         <tr><td>Coached exercise library</td><td>Headset, plus a phone on a stand about two metres away with the full body in frame, plus clear floor space. Or the phone alone.</td></tr>
@@ -1871,7 +1907,25 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the rehabilitation programme on a headset.</h2><p>Bring a physiotherapist or an occupational therapist. We will scan someone in the room and show the report.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="sec faq" id="r-faq">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb">FAQ</div><h2>VR rehabilitation: common questions</h2></div>
+        <p>What clinics and care teams ask before they start.</p>
+      </div>
+      <div class="list rt">
+        <div class="q"><button aria-expanded="false">Who is CogniHab VR rehabilitation for?<i></i></button><div class="a"><p>Hospitals, neurological and spinal units, physiotherapy and occupational therapy departments, orthopaedic and sports clinics, senior care homes, fitness centres and home programmes supervised by a clinic.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can patients who cannot hold a controller use it?<i></i></button><div class="a"><p>Yes. The gamified tasks also work with bare-hand tracking, so a patient who cannot grip a controller can still train.</p></div></div>
+        <div class="q"><button aria-expanded="false">Does it replace the physiotherapist?<i></i></button><div class="a"><p>No. The clinician reviews the scans and sets the programme. Voice guidance means a trained assistant can run the sessions, and the clinician sees every score.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can patients continue rehabilitation at home?<i></i></button><div class="a"><p>Yes. The two scans and the coached exercise library run on a mobile phone alone, with no headset, and the clinic can see what was completed and how well.</p></div></div>
+        <div class="q"><button aria-expanded="false">How is progress measured?<i></i></button><div class="a"><p>Each task and repetition is scored, and the posture and joint movement scans are repeated against the first one, so range of motion is compared in degrees.</p></div></div>
+        <div class="q"><button aria-expanded="false">What equipment is needed?<i></i></button><div class="a"><p>A Meta Quest headset for the gamified tasks, plus a phone on a stand for the exercise library and scans. The phone-only option needs just a phone and about two metres of clear floor.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is VR rehabilitation safe?<i></i></button><div class="a"><p>Sessions are short, can be done seated, and are prescribed and monitored by the clinic. Read our guide: <a href="/blog/is-vr-therapy-safe-everything-you-need-to-know-before-starting/">Is VR therapy safe?</a></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>See how CogniHab supports VR rehabilitation</h2><p>Bring structured rehabilitation, movement tracking and progress reporting into your clinical or care setting.</p><p>See how CogniHab can support rehabilitation programmes through guided exercises, interactive tasks, posture and joint movement scans, and session reports.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p><p class="also">Explore other CogniHab programmes: <a href="/vision/">VR Vision Therapy</a> &#183; <a href="/well-being/">VR Well-being</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=rehabilitation">Book a VR rehabilitation demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/">Contact the CogniHab team</a></div></div></section>
 </main>
 
 <!-- ================= VISION ================= -->
@@ -1879,20 +1933,40 @@ h2{text-wrap:balance}
   <section class="pg">
     <div class="pghero"><img class="pgimg" data-src="vision" alt="A doctor guides a child wearing a VR headset through a vision exercise"><div class="scrim"></div></div>
     <div class="wrap"><div class="rt">
-        <div class="eb">Vision care</div>
-        <h1>Screen widely. Treat what you find.</h1>
-        <p class="lead">An immersive therapy for lazy eye that a child will actually finish, and a guided screening check of several tests, under ten minutes, that tells you who needs the ophthalmologist. Built for eye clinics, schools, workplaces and community programmes.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/vision/#screening">The screening check</a></div>
+        <!--CRUMBS-->
+        <div class="eb">VR vision care</div>
+        <h1>VR vision therapy and screening. Screen widely. Treat what you find.</h1>
+        <p class="lead">An immersive therapy for lazy eye (amblyopia) that a child will actually finish, and a guided screening check of several tests, under ten minutes, that tells you who needs the ophthalmologist. Built for eye clinics, schools, workplaces and community programmes.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=vision">Book a vision demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="#screening">The screening check</a></div>
+        <div class="shortcuts">Choose your setting: <a href="/vision/lazy-eye-therapy/">Lazy eye therapy in the clinic</a> &#183; <a href="/vision/vision-screening/">Screening in the clinic and the workplace</a> &#183; <a href="/vision/school-community-screening/">School and community screening</a></div>
         <div class="std">Screening indicates when an ophthalmologist should be consulted. It is not a diagnosis.</div>
       </div></div>
+  </section>
+
+  <section class="sec tight whatis" id="v-what">
+    <div class="wrap wgrid">
+      <div class="rt"><div class="eb">Overview</div><h2>What is VR vision therapy?</h2><p>VR vision therapy uses a virtual reality headset to show each eye a different part of the same scene. For lazy eye (amblyopia), a game can only be completed when the weaker eye does its share, so both eyes learn to work together instead of patching the stronger one. CogniHab pairs it with a guided VR vision screening.</p></div>
+      <aside class="facts rt" aria-label="At a glance"><div class="ft">At a glance</div><ul><li><b>11 games</b> &#183; 3 modes</li><li><b>15-min</b> sessions</li><li><b>Meta Quest + mobile VR</b></li><li><b>6 vision checks</b> &#183; under 10 min</li><li><b>Clear / Refer</b> results</li><li><b>Patent 575729</b></li><li><b>Jaipur, India</b></li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight" id="v-cases" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb">Use cases</div><h2>Vision Care Use Cases</h2></div><p>Three settings, one vision care platform. CogniHab supports lazy eye therapy and guided vision screening across clinics, workplaces, schools and community programmes.</p></div>
+      <div class="ucards rt">
+        <article class="uc v fc" id="uc-lazy-eye-therapy"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-uc-clinic.jpg}}" alt="A girl in a VR headset holds two controllers while an optometrist in a white coat sits across from her"></div><div class="fcap"><h3>Lazy Eye Therapy in the Clinic</h3><p>VR vision therapy for structured lazy eye treatment.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Lazy Eye Therapy in the Clinic</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The clinic prescribes the programme and the child completes around 15-minute sessions across 11 therapy games and 3 training modes. The clinic can track whether sessions are being completed between visits.</p><h4>What it addresses</h4><p>Lazy eye / amblyopia &#183; Vision therapy &#183; Eye coordination &#183; Structured therapy sessions</p><h4>Who buys it</h4><p>Eye clinics, paediatric ophthalmology departments and optometry practices.</p><h4>What is needed</h4><p>Meta Quest headset with controllers in the clinic. At home, lightweight VR goggles with a mobile phone and handheld remote.</p><a class="lnk ucmore" href="/vision/lazy-eye-therapy/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc v fc" id="uc-vision-screening"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-uc-workplace.jpg}}" alt="An employee in a shirt and tie sits in a VR headset in an office meeting room beside a clinic assistant"></div><div class="fcap"><h3>Vision Screening in Clinics &amp; Workplaces</h3><p>A guided VR eye test in under ten minutes.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Vision Screening in Clinics &amp; Workplaces</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>A trained assistant guides the person through six vision checks inside the headset. A detailed screening report is available at the end, showing which results are clear and which require referral.</p><h4>What it addresses</h4><p>Visual acuity &#183; Contrast sensitivity &#183; Depth perception &#183; Eye coordination &#183; Colour vision &#183; Near focusing</p><h4>Who buys it</h4><p>Eye clinics, hospitals, primary care networks and employers.</p><h4>What is needed</h4><p>Meta Quest headset and a trained assistant. Screening indicates when an ophthalmologist should be consulted and is not a diagnosis.</p><a class="lnk ucmore" href="/vision/vision-screening/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc v fc" id="uc-school-community-screening"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-screening-school.jpg}}" alt="A row of schoolchildren in uniform wait on chairs while the nearest child wears a VR headset"></div><div class="fcap"><h3>School &amp; Community Vision Screening</h3><p>Screen groups and leave with a referral list.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>School &amp; Community Vision Screening</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The same six checks can be used during school and community screening programmes. A trained non-clinician can run the screening, with results available at the end to identify people requiring ophthalmologist follow-up.</p><h4>What it addresses</h4><p>School-age vision screening &#183; Community screening &#183; Population screening &#183; Undetected vision problems &#183; Ophthalmologist referral</p><h4>Who buys it</h4><p>Government health programmes, non-governmental organisations and school networks.</p><h4>What is needed</h4><p>Meta Quest headset, a chair and an internet connection. A trained assistant runs the screening.</p><a class="lnk ucmore" href="/vision/school-community-screening/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+      </div>
+    </div>
   </section>
 
   <section class="sec tight" id="v-lazy" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div class="wrap split">
       <div class="side rt">
-        <div class="eb">Lazy eye therapy</div>
-        <h2>The therapy happens while they play.</h2>
-        <p>Each eye is shown a different part of the same scene. The game cannot be completed unless the weaker eye is doing its share of the work. The child is playing a game; the eye is being trained.</p>
+        <div class="eb">Lazy eye therapy (amblyopia)</div>
+        <h2>VR lazy eye therapy: the therapy happens while they play.</h2>
+        <p>Each eye is shown a different part of the same scene. The game cannot be completed unless the weaker eye is doing its share of the work. The child is playing a game; the eye is being trained. Unlike patching, both eyes stay open: the image to the stronger eye is held back, the weaker eye&#8217;s is enhanced, and the gap narrows automatically as the child improves.</p>
         <div class="rv side-img"><img src="{{IMG:vision-lazy-eye-game.jpg}}" alt="Inside the headset: a bright meadow game with floating shapes and a ring sight"></div>
       </div>
       <div class="ways rt">
@@ -1906,7 +1980,7 @@ h2{text-wrap:balance}
   <section class="sec" id="screening">
     <div class="wrap">
       <div class="head2 rt">
-        <div><div class="eb">Vision screening</div><h2>A ten-minute check that tells you who needs the ophthalmologist.</h2></div>
+        <div><div class="eb">VR vision screening</div><h2>A ten-minute vision screening check that tells you who needs the ophthalmologist.</h2></div>
         <p>A voice walks the person through each check inside the headset, so a trained assistant can run it without a clinician present. A detailed report is presented at the end, and a screening day ends with the referral list ready.</p>
       </div>
       <div class="two rt">
@@ -1936,17 +2010,6 @@ h2{text-wrap:balance}
           </div>
           <p><b>The standing line:</b> this is a screening tool. It indicates when an ophthalmologist should be consulted and does not diagnose any condition.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec tight" id="v-cases" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-    <div class="wrap">
-      <div class="head2 rt"><div><div class="eb">Use cases</div><h2>Three settings, one headset.</h2></div><p>From a single consulting room to a hundred children in a school hall.</p></div>
-      <div class="ucards rt">
-        <article class="uc v fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-uc-clinic.jpg}}" alt="A girl in a VR headset holds two controllers while an optometrist in a white coat sits across from her"></div><div class="fcap"><h3>Lazy eye therapy in the clinic</h3><p>Therapy a child will actually finish.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Lazy eye therapy in the clinic</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The clinic prescribes the programme, the child plays through the eleven games in short sessions, and the clinic tracks completion between visits. The home goggles let the programme continue between appointments without the family travelling.</p><h4>What it addresses</h4><p>Amblyopia, commonly called lazy eye.</p><h4>Who buys it</h4><p>Eye clinics, paediatric ophthalmology departments, optometry practices.</p><h4>What is needed</h4><p>In clinic, headset with controllers. At home, goggles with a phone and a remote.</p></div></div></article>
-        <article class="uc v fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-uc-workplace.jpg}}" alt="An employee in a shirt and tie sits in a VR headset in an office meeting room beside a clinic assistant"></div><div class="fcap"><h3>Screening in the clinic and the workplace</h3><p>More people seen, without more ophthalmologist hours.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Screening in the clinic and the workplace</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The screening check run by an assistant on arrival, so the ophthalmologist's time goes to the people who need it. In a corporate office it runs as a wellness-day check with the same referral list at the end. Every result is either clear or a referral.</p><h4>What it addresses</h4><p>Undetected vision problems in children and adults. High patient volume against limited specialist time.</p><h4>Who buys it</h4><p>Eye clinics, hospitals, primary care networks, employers.</p><h4>What is needed</h4><p>Meta Quest headset.</p></div></div></article>
-        <article class="uc v fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:vision-screening-school.jpg}}" alt="A row of schoolchildren in uniform wait on chairs while the nearest child wears a VR headset"></div><div class="fcap"><h3>School and community screening</h3><p>Screen a hundred children in a morning and leave with the referral list.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>School and community screening</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The same checks run as a screening day by a trained non-clinician. At the end there is a list of everyone who needs to see an ophthalmologist, so no flagged child is lost between the school and the clinic.</p><h4>What it addresses</h4><p>Undetected vision problems in school-age children. Populations with no routine eye examination.</p><h4>Who buys it</h4><p>Government health programmes, non-governmental organisations, school networks.</p><h4>What is needed</h4><p>Meta Quest headset, run from a table in any room, with an internet connection.</p></div></div></article>
       </div>
     </div>
   </section>
@@ -1982,16 +2045,35 @@ h2{text-wrap:balance}
 
   <section class="sec tight" id="v-equipment">
     <div class="wrap">
-      <div class="head2 rt"><div><div class="eb">What the buyer needs</div><h2>The equipment, line by line.</h2></div><p>What has to be in the room for each part of the vision programme.</p></div>
+      <div class="head2 rt"><div><div class="eb">What the buyer needs</div><h2>The equipment for VR vision therapy and screening</h2></div><p>What has to be in the room for each part of the vision programme.</p></div>
       <div class="tblwrap rt"><table class="eqt"><thead><tr><th>Programme</th><th>What the buyer needs</th></tr></thead><tbody>
         <tr><td>Lazy eye therapy, clinic</td><td>Meta Quest headset with controllers.</td></tr>
         <tr><td>Lazy eye therapy, home</td><td>Lightweight VR goggles that hold a mobile phone, with a handheld remote.</td></tr>
-        <tr><td>Vision screening</td><td>Meta Quest headset, a chair, and an internet connection. A trained assistant runs it.</td></tr>
+        <tr><td>Vision screening</td><td>Meta Quest headset, a chair, and an internet connection. A trained assistant runs the screening.</td></tr>
       </tbody></table></div>
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>See the screening check run in ten minutes.</h2><p>Bring an optometrist or a school health lead. We will run the check on someone in the room and show the report.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="sec faq" id="v-faq">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb">FAQ</div><h2>VR vision therapy and screening: common questions</h2></div>
+        <p>What eye clinics, schools and programme leads ask before they start.</p>
+      </div>
+      <div class="list rt">
+        <div class="q"><button aria-expanded="false">Is the VR vision screening a diagnosis?<i></i></button><div class="a"><p>No. It is a screening tool. Each result is either clear or a referral, and it indicates when an ophthalmologist should be consulted.</p></div></div>
+        <div class="q"><button aria-expanded="false">What ages can use the lazy eye therapy?<i></i></button><div class="a"><p>The published CogniHab programme included patients from 5 to 35 years and above. The clinic decides who is suitable.</p></div></div>
+        <div class="q"><button aria-expanded="false">Does it replace patching?<i></i></button><div class="a"><p>The clinic prescribes the programme and decides how it fits with other treatment. In the VR games both eyes stay open and are trained to work together.</p></div></div>
+        <div class="q"><button aria-expanded="false">How long is each session?<i></i></button><div class="a"><p>Lazy eye therapy sessions take about 15 minutes. A vision screening takes under 10 minutes per person.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can lazy eye therapy continue at home?<i></i></button><div class="a"><p>Yes. The programme runs on lightweight VR goggles with a phone and a handheld remote, and the clinic can see whether sessions are completed.</p></div></div>
+        <div class="q"><button aria-expanded="false">Who can run the vision screening?<i></i></button><div class="a"><p>A trained assistant or non-clinician. A voice guides the person through each check, so no clinician needs to be present.</p></div></div>
+        <div class="q"><button aria-expanded="false">How many people can be screened in a day?<i></i></button><div class="a"><p>One screening takes under 10 minutes, so a school screening day can cover around a hundred children in a morning.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is CogniHab&#8217;s vision technology patented?<i></i></button><div class="a"><p>Yes. <a href="/patent/">Indian Patent 575729</a>, granted on 12 December 2025, covers the immersive system and method for vision assessment and correction.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>Ready to set up VR vision therapy or screening?</h2><p>Talk to the CogniHab team about the equipment, setup and programme requirements for your clinic, school or screening programme.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p><p class="also">Explore other CogniHab programmes: <a href="/rehabilitation/">VR Rehabilitation</a> &#183; <a href="/well-being/">VR Well-being</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=vision">Talk to our team <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/?programme=vision">Request a demo</a></div></div></section>
 </main>
 
 <!-- ================= WELL-BEING ================= -->
@@ -1999,11 +2081,30 @@ h2{text-wrap:balance}
   <section class="pg">
     <div class="pghero"><img class="pgimg" data-src="mind" alt="A woman reclines in a chair wearing a VR headset during a guided journey"><div class="scrim"></div></div>
     <div class="wrap"><div class="rt">
-        <div class="eb">Well-being</div>
-        <h1>A quieter room, anywhere.</h1>
-        <p class="lead">Eleven guided journeys. Eight to ten minutes each, taken sitting down, with no experience needed and no instructor in the room. For workplaces, for wards, for care homes and for home.</p>
-        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/#w-employers">For employers</a></div>
+        <!--CRUMBS-->
+        <div class="eb">Well-being &#183; VR well-being</div>
+        <h1>VR meditation and relaxation: a quieter room, anywhere.</h1>
+        <p class="lead">Guided VR meditation for stress relief, with 11 guided journeys lasting 8 to 10 minutes each. Sessions are taken sitting down, require no prior experience, and need no instructor in the room. Designed for workplaces, wards, care homes and home use.</p>
+        <div class="acts" style="display:flex;gap:.7rem;flex-wrap:wrap"><a class="btn p" href="/contact/?programme=well-being">Book a well-being demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/well-being/workplace-wellbeing/">For employers</a></div>
       </div></div>
+  </section>
+
+  <section class="sec tight whatis" id="w-what">
+    <div class="wrap wgrid">
+      <div class="rt"><div class="eb" style="color:var(--royal)">Overview</div><h2>What is VR meditation?</h2><p>VR meditation uses a virtual reality headset and headphones to place a person inside a calm natural scene while a voice guides their breathing. Blocking out the room makes it easier to settle, even for beginners. CogniHab&#8217;s journeys last 8&#8211;10 minutes, are taken seated, and use breathing, humming or the voice as the anchor.</p></div>
+      <aside class="facts rt" aria-label="At a glance"><div class="ft">At a glance</div><ul><li><b>11 guided journeys</b> &#183; 3 types</li><li><b>8&#8211;10 min</b> sessions</li><li><b>Meta Quest + mobile VR</b></li><li><b>DASS check-in</b> &#183; before &amp; after</li><li><b>No instructor or booking</b></li><li><b>Jaipur, India</b></li></ul></aside>
+    </div>
+  </section>
+
+  <section class="sec tight" id="w-cases" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head2 rt"><div><div class="eb" style="color:var(--royal)">Use cases</div><h2>VR Well-being for Workplaces, Care Settings and Home</h2></div><p>The same guided VR well-being journeys, designed for different settings. From short workplace resets and quiet time in care settings to daily practice at home, CogniHab makes guided sessions easy to access without an instructor.</p></div>
+      <div class="ucards rt">
+        <article class="uc m fc" id="uc-workplace-wellbeing"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:home-session-mind.jpg}}" alt="An office worker relaxes in an armchair wearing a VR headset and headphones in a quiet corner of the office"></div><div class="fcap"><h3>Workplace Well-being</h3><p>Ten quiet minutes, without leaving the building.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Workplace Well-being</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Journeys are used as a short reset during the working day, with a DASS check-in at the start and posture scans for desk workers. Nothing to book and no instructor is needed.</p><h4>What it addresses</h4><p>Workplace stress &#183; Day-to-day mindfulness &#183; Postural strain from desk work</p><h4>Who buys it</h4><p>Employers, human resources teams and occupational health providers.</p><h4>What is needed</h4><p>Headset and headphones. A quiet corner and a chair.</p><a class="lnk ucmore" href="/well-being/workplace-wellbeing/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc m fc" id="uc-care-settings"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:wellbeing-ward.jpg}}" alt="An elderly man sits in a high-backed chair wearing a VR headset and headphones in a bright hospital day room"></div><div class="fcap"><h3>Well-being in Care Settings</h3><p>The same journeys, used on the ward.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Well-being in Care Settings</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Used to settle patients before a procedure, between therapy sessions or as quiet time in a care home. Taken seated, with no experience needed.</p><h4>What it addresses</h4><p>Anxiety before procedures &#183; Long waits between therapy sessions &#183; Quiet time in residential care</p><h4>Who buys it</h4><p>Hospitals, senior care homes and rehabilitation centres.</p><h4>What is needed</h4><p>Headset and headphones.</p><a class="lnk ucmore" href="/well-being/care-settings/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+        <article class="uc m fc" id="uc-at-home"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:wellbeing-home.jpg}}" alt="A young woman sits cross-legged on a sofa at home wearing mobile VR goggles and earbuds"></div><div class="fcap"><h3>At Home</h3><p>A daily practice that fits in a drawer.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>At Home</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Provides access to the 11 guided journeys through lightweight mobile VR goggles and a phone. Sessions are seated and designed for regular home use.</p><h4>What it addresses</h4><p>Daily relaxation practice &#183; Guided mindfulness &#183; Stress relief</p><h4>Who buys it</h4><p>Individuals and families.</p><h4>What is needed</h4><p>Lightweight VR goggles that hold a mobile phone.</p><a class="lnk ucmore" href="/well-being/at-home/">Read the full use case <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></div></article>
+      </div>
+    </div>
   </section>
 
   <section class="sec tight" id="w-journeys" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
@@ -2034,17 +2135,6 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="sec tight" id="w-cases" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-    <div class="wrap">
-      <div class="head2 rt"><div><div class="eb" style="color:var(--royal)">Use cases</div><h2>The same journeys, three places.</h2></div><p>Workplaces, wards and living rooms.</p></div>
-      <div class="ucards rt">
-        <article class="uc m fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:home-session-mind.jpg}}" alt="An office worker relaxes in an armchair wearing a VR headset and headphones in a quiet corner of the office"></div><div class="fcap"><h3>Workplace well-being</h3><p>Ten quiet minutes, without leaving the building.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Workplace well-being</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Journeys used as a short reset during the working day, a DASS check-in at the start, plus posture scans for desk workers. Nothing to book and no instructor needed.</p><h4>What it addresses</h4><p>Workplace stress. Day-to-day mindfulness. Postural strain from desk work.</p><h4>Who buys it</h4><p>Employers, human resources teams, occupational health providers.</p><h4>What is needed</h4><p>Headset and headphones. A quiet corner and a chair.</p></div></div></article>
-        <article class="uc m fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:wellbeing-ward.jpg}}" alt="An elderly man sits in a high-backed chair wearing a VR headset and headphones in a bright hospital day room"></div><div class="fcap"><h3>Well-being in care settings</h3><p>The same journeys, used on the ward.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>Well-being in care settings</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>Used to settle patients before a procedure, between therapy sessions, or as quiet time in a care home. Taken seated, with no experience needed.</p><h4>What it addresses</h4><p>Anxiety before procedures. Long waits between therapy sessions. Quiet time in residential care.</p><h4>Who buys it</h4><p>Hospitals, senior care homes, rehabilitation centres.</p><h4>What is needed</h4><p>Headset and headphones.</p></div></div></article>
-        <article class="uc m fc"><div class="fcin"><div class="fcf"><div class="im"><img src="{{IMG:wellbeing-home.jpg}}" alt="A young woman sits cross-legged on a sofa at home wearing mobile VR goggles and earbuds"></div><div class="fcap"><h3>At home</h3><p>A daily practice that fits in a drawer.</p><button class="flipbtn light" type="button">See more details</button></div></div><div class="fcb"><div class="fcbh"><h3>At home</h3><button class="flipbtn" type="button">Back</button></div><h4>What it does</h4><p>The eleven journeys on lightweight VR goggles that hold a mobile phone, so a person keeps a daily mindfulness practice at home without owning a headset.</p><h4>What it addresses</h4><p>Day-to-day mindfulness. Stress at home. Continuity between sessions taken elsewhere.</p><h4>Who buys it</h4><p>Individuals and families.</p><h4>What is needed</h4><p>Mobile VR goggles and a phone.</p></div></div></article>
-      </div>
-    </div>
-  </section>
-
   <section class="sec tight" id="w-equipment">
     <div class="wrap">
       <div class="head2 rt"><div><div class="eb" style="color:var(--royal)">What the buyer needs</div><h2>The equipment, line by line.</h2></div><p>What has to be in the room for the well-being programme.</p></div>
@@ -2057,7 +2147,25 @@ h2{text-wrap:balance}
     </div>
   </section>
 
-  <section class="pillar-cta"><div class="wrap rt"><div><h2>Take ten quiet minutes on a headset.</h2><p>Bring an HR lead or a ward manager. We will run one journey in the room.</p></div><a class="btn w" href="/contact/">Contact Us <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div></section>
+  <section class="sec faq" id="w-faq">
+    <div class="wrap">
+      <div class="head2 rt">
+        <div><div class="eb" style="color:var(--royal)">FAQ</div><h2>VR meditation: common questions</h2></div>
+        <p>What employers, care teams and individuals ask before they start.</p>
+      </div>
+      <div class="list rt">
+        <div class="q"><button aria-expanded="false">Is this a treatment for anxiety or depression?<i></i></button><div class="a"><p>No. CogniHab well-being journeys are guided relaxation and mindfulness sessions, not medical treatment. The DASS check-in shows change over time; it is not a diagnosis. Anyone with ongoing symptoms should speak to a doctor or mental health professional.</p></div></div>
+        <div class="q"><button aria-expanded="false">Do I need any meditation experience?<i></i></button><div class="a"><p>No. A voice guides every step, the person sits throughout, and nothing is asked beyond following along.</p></div></div>
+        <div class="q"><button aria-expanded="false">How long is each session?<i></i></button><div class="a"><p>Each journey takes 8 to 10 minutes, and can be repeated as often as the day allows.</p></div></div>
+        <div class="q"><button aria-expanded="false">What is the DASS check-in?<i></i></button><div class="a"><p>A short questionnaire inside the headset, based on the Depression Anxiety Stress Scales, taken before and after a programme so each person can see their own change.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can we use it in an office?<i></i></button><div class="a"><p>Yes. A headset and headphones in a quiet corner is enough: no booking, no instructor and no room to hire.</p></div></div>
+        <div class="q"><button aria-expanded="false">Can I use it at home?<i></i></button><div class="a"><p>Yes. The same eleven journeys run on lightweight VR goggles that hold a mobile phone, plus headphones.</p></div></div>
+        <div class="q"><button aria-expanded="false">Is VR meditation safe?<i></i></button><div class="a"><p>Sessions are short and taken seated. People who feel unwell in VR can stop at any time. Read our guide: <a href="/blog/is-vr-therapy-safe-everything-you-need-to-know-before-starting/">Is VR therapy safe?</a></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillar-cta"><div class="wrap rt"><div><h2>Experience a guided VR well-being journey</h2><p>Bring your team or care setting into the room and experience one of CogniHab&#8217;s guided VR well-being journeys. See how the session works, what the setup requires and how it can fit into your programme.</p><p class="talk">WhatsApp / Call <a href="tel:+917426060606">+91 74260 60606</a> &#183; <a href="mailto:info@cognihab.com">info@cognihab.com</a></p><p class="also">Explore other CogniHab programmes: <a href="/rehabilitation/">VR Rehabilitation</a> &#183; <a href="/vision/">VR Vision Therapy</a></p></div><div class="pcta-acts"><a class="btn w" href="/contact/?programme=well-being">Book a well-being demo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a><a class="btn o" href="/contact/?programme=well-being">Talk to our team</a></div></div></section>
 </main>
 
 <!-- ================= ADVISORS ================= -->
@@ -2356,7 +2464,8 @@ function parse(){
   if(legacy[h])h=legacy[h];
   const parts=h.split('/');
   for(let i=parts.length;i>0;i--){const k=parts.slice(0,i).join('/');if(views[k])return{view:k,sub:parts.slice(i).join('/')};}
-  if(h&&document.getElementById(h))return{view:'home',sub:h};
+  const el=h&&document.getElementById(h);
+  if(el){const m=el.closest('main.view');return{view:m?m.dataset.view:'home',sub:h};}
   return{view:'home',sub:''};
 }
 function route(){

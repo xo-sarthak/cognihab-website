@@ -1,0 +1,8 @@
+# Pages that live on the main WordPress site, not in this app
+/blog/*                  https://cognihab.com/blog/:splat                 302
+/blog                    https://cognihab.com/blog/                       302
+/case-studies/*          https://cognihab.com/case-studies/:splat         302
+/terms-and-conditions/*  https://cognihab.com/terms-and-conditions/:splat 302
+/privacy-policy/*        https://cognihab.com/privacy-policy/:splat       302
+/returns-policy/*        https://cognihab.com/returns-policy/:splat       302
+/qr-code/*               https://cognihab.com/qr-code/:splat              302

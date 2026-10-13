@@ -206,7 +206,7 @@ export default function RehabilitationView() {
       <section className="pillar-cta">
         <div className="wrap rt">
           <div>
-            <h2>See how CogniHab supports VR rehabilitation</h2>
+            <h2>See How CogniHab Supports VR Rehabilitation</h2>
             <p>Bring structured rehabilitation, movement tracking and progress reporting into your clinical or care setting.</p>
             <p>See how CogniHab can support rehabilitation programmes through guided exercises, interactive tasks, posture and joint movement scans, and session reports.</p>
             <p className="talk">WhatsApp / Call{" "}<a href="tel:+917426060606">+91 74260 60606</a>{" "}·{" "}<a href="mailto:info@cognihab.com">info@cognihab.com</a></p>
@@ -214,9 +214,9 @@ export default function RehabilitationView() {
               <Link href="/vision/">VR Vision Therapy</Link>{" "}·{" "}
               <Link href="/well-being/">VR Well-being</Link></p></div>
           <div className="pcta-acts">
-            <Link className="btn w" href="/contact/?programme=rehabilitation">Book a VR rehabilitation demo{" "}
+            <Link className="btn w" href="/contact/?programme=rehabilitation">Book a VR Rehabilitation Demo{" "}
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 8h11M9 4l4 4-4 4" /></svg></Link>
-            <Link className="btn o" href="/contact/">Contact the CogniHab team</Link></div></div></section>
+            <Link className="btn o" href="/contact/">Contact the CogniHab Team</Link></div></div></section>
     </main>
   );
 }

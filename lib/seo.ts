@@ -26,7 +26,9 @@ export function pageMetadata(path: string): Metadata {
 }
 
 /** Pages under About Us that are not nested under /about-us/ in the URL. */
+/** Pages under About Us. About CogniHab itself shows "About Us" as an unlinked step, per the brief. */
 const CRUMB_PARENT: Record<string, { name: string; path: string }> = {
+  "about-us": { name: "About Us", path: "" },
   patent: { name: "About Us", path: "/about-us/" },
   research: { name: "About Us", path: "/about-us/" },
   advisors: { name: "About Us", path: "/about-us/" },

@@ -13,7 +13,7 @@ export default function Breadcrumbs({ path }: { path: string }) {
         {trail.map((c, i) => (
           <Fragment key={c.path + i}>
             {i > 0 && <span aria-hidden="true">›</span>}
-            {i < trail.length - 1 ? <Link href={c.path}>{c.name}</Link> : <span aria-current="page">{c.name}</span>}
+            {i === trail.length - 1 ? <span aria-current="page">{c.name}</span> : c.path ? <Link href={c.path}>{c.name}</Link> : <span>{c.name}</span>}
           </Fragment>
         ))}
       </nav>
@@ -21,7 +21,9 @@ export default function Breadcrumbs({ path }: { path: string }) {
         data={{
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          itemListElement: trail.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: SITE.url + c.path })),
+          itemListElement: trail
+            .filter((c) => c.path)
+            .map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: SITE.url + c.path })),
         }}
       />
     </>

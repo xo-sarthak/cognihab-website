@@ -14,12 +14,12 @@ export default function WellBeingView() {
           <div className="rt">
       <Breadcrumbs path="/well-being/" />
             <div className="eb">Well-being · VR well-being</div>
-            <h1>VR meditation and relaxation: a quieter room, anywhere.</h1>
+            <h1>VR Meditation and Relaxation: A Quieter Room, Anywhere</h1>
             <p className="lead">Guided VR meditation for stress relief, with 11 guided journeys lasting 8 to 10 minutes each. Sessions are taken sitting down, require no prior experience, and need no instructor in the room. Designed for workplaces, wards, care homes and home use.</p>
             <div className="acts" style={{ display: "flex", gap: ".7rem", flexWrap: "wrap" }}>
-              <Link className="btn p" href="/contact/?programme=well-being">Book a well-being demo{" "}
+              <Link className="btn p" href="/contact/?programme=well-being">Book a Well-being Demo{" "}
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 8h11M9 4l4 4-4 4" /></svg></Link>
-              <Link className="btn o" href="/well-being/workplace-wellbeing/">For employers</Link></div></div></div></section>
+              <Link className="btn o" href="/well-being/workplace-wellbeing/">For Employers</Link></div></div></div></section>
       <section className="sec tight whatis" id="w-what">
         <div className="wrap wgrid">
           <div className="rt">
@@ -115,16 +115,16 @@ export default function WellBeingView() {
       <section className="pillar-cta">
         <div className="wrap rt">
           <div>
-            <h2>Experience a guided VR well-being journey</h2>
+            <h2>Experience a Guided VR Well-being Journey</h2>
             <p>Bring your team or care setting into the room and experience one of CogniHab’s guided VR well-being journeys. See how the session works, what the setup requires and how it can fit into your programme.</p>
             <p className="talk">WhatsApp / Call{" "}<a href="tel:+917426060606">+91 74260 60606</a>{" "}·{" "}<a href="mailto:info@cognihab.com">info@cognihab.com</a></p>
             <p className="also">Explore other CogniHab programmes:{" "}
               <Link href="/rehabilitation/">VR Rehabilitation</Link>{" "}·{" "}
               <Link href="/vision/">VR Vision Therapy</Link></p></div>
           <div className="pcta-acts">
-            <Link className="btn w" href="/contact/?programme=well-being">Book a well-being demo{" "}
+            <Link className="btn w" href="/contact/?programme=well-being">Book a Well-being Demo{" "}
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 8h11M9 4l4 4-4 4" /></svg></Link>
-            <Link className="btn o" href="/contact/?programme=well-being">Talk to our team</Link></div></div></section>
+            <Link className="btn o" href="/contact/?programme=well-being">Talk to Our Team</Link></div></div></section>
     </main>
   );
 }

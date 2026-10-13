@@ -26,7 +26,8 @@ export default function UseCaseCards({ programme }: { programme: Programme }) {
               </div>
               <div className="fcap">
                 <h3>{u.title}</h3>
-                <p>{u.subtitle}</p>
+                <p className="fsub">{u.subtitle}</p>
+                <p className="fsum">{u.summary}</p>
                 <button className="flipbtn light" type="button">See more details</button>
               </div>
             </div>

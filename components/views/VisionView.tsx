@@ -149,9 +149,9 @@ export default function VisionView() {
               <Link href="/rehabilitation/">VR Rehabilitation</Link>{" "}·{" "}
               <Link href="/well-being/">VR Well-being</Link></p></div>
           <div className="pcta-acts">
-            <Link className="btn w" href="/contact/?programme=vision">Talk to our team{" "}
+            <Link className="btn w" href="/contact/?programme=vision">Talk to Our Team{" "}
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M2 8h11M9 4l4 4-4 4" /></svg></Link>
-            <Link className="btn o" href="/contact/?programme=vision">Request a demo</Link></div></div></section>
+            <Link className="btn o" href="/contact/?programme=vision">Request a Demo</Link></div></div></section>
     </main>
   );
 }

@@ -116,7 +116,10 @@ body.menu-open .burger span{background:#fff}
 .stage .grid{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(74,163,182,.5) 1px,transparent 1.4px);background-size:26px 26px;opacity:0;transition:opacity .8s;pointer-events:none}
 .stage .grid.on{opacity:.28}
 #lab{opacity:0;transition:opacity .6s}
-.hero .copy{position:absolute;left:max(4vw,calc((100vw - 1280px)/2));top:50%;transform:translateY(-50%);width:min(720px,50vw);z-index:2}
+/* centred in the space under the fixed header (and the announcement bar when it shows), not the whole screen */
+.hero .copy{--top:calc(14px + 62px + 12px);position:absolute;left:max(4vw,calc((100vw - 1280px)/2));top:calc(var(--top) + (100% - var(--top))/2);transform:translateY(-50%);width:min(720px,50vw);z-index:2}
+body.has-ann .hero .copy{--top:calc(54px + 62px + 12px)}
+@media (max-height:760px) and (min-width:761px){.hero h1{font-size:clamp(2.1rem,3.5vw,3.5rem);margin:.6rem 0 .8rem}.hero .lead{margin-bottom:1.1rem;font-size:1rem}}
 .hero h1{font-size:clamp(2.4rem,4.4vw,4.4rem);color:var(--navy);margin:.9rem 0 1.1rem;text-wrap:balance}
 .hero h1 em{font-style:normal;color:var(--leaf)}
 .hero .lead{margin-bottom:1.5rem;max-width:44ch;font-size:clamp(1rem,1.15vw,1.12rem)}
